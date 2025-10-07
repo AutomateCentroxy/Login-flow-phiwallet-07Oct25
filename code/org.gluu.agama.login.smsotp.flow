@@ -10,5 +10,9 @@ uiFeedback.errorMessage = ""
 Repeat __________ times max
      RRF "__________" 
      When 
+     Otherwise
+          Log "@ " __________
+          Call __________#__________ 
+          Log "@ " __________
 Log "@ " __________
 Finish __________
