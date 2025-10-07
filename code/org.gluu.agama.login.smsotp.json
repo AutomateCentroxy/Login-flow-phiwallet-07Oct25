@@ -32,8 +32,8 @@
 				}
 			},
 			"measured": {
-				"width": 168,
-				"height": 120
+				"width": 170,
+				"height": 123
 			},
 			"selected": false
 		},
@@ -68,6 +68,54 @@
 				"width": 170,
 				"height": 123
 			},
+			"selected": false
+		},
+		{
+			"id": "assignmentNode-db587bec-89f6-4981-9030-005a44a0d68c",
+			"type": "assignmentNode",
+			"position": {
+				"x": 530,
+				"y": 30
+			},
+			"data": {
+				"id": "assignmentNode-db587bec-89f6-4981-9030-005a44a0d68c",
+				"type": "assignmentNode",
+				"position": {
+					"x": 530,
+					"y": 30
+				},
+				"previousNodeId": "logNode-0c1681d4-ff6c-4210-b8af-710f18c421ac",
+				"agamaData": {
+					"assignments": [
+						{
+							"variableTypeCheck": true,
+							"assignmentExpression": "false",
+							"assignedVariableName": "otpValidationResult"
+						},
+						{
+							"variableTypeCheck": true,
+							"assignmentExpression": "\"Otp send to the registered mobile number\"",
+							"assignedVariableName": "uiFeedback.infoMessage"
+						},
+						{
+							"variableTypeCheck": true,
+							"assignmentExpression": "\"\"",
+							"assignedVariableName": "uiFeedback.errorMessage"
+						}
+					],
+					"nodeIcon": "material-symbols:equal",
+					"nodeColor": "",
+					"titleColor": "",
+					"descColor": "",
+					"displayName": "",
+					"hasComment": true,
+					"comment": ""
+				}
+			},
+			"measured": {
+				"width": 170,
+				"height": 123
+			},
 			"selected": true
 		}
 	],
@@ -90,11 +138,30 @@
 			},
 			"labelShowBg": true,
 			"sourceHandle": "source_startNode-54474561-67e4-4e6f-9082-148f82628cf8"
+		},
+		{
+			"id": "logNode-0c1681d4-ff6c-4210-b8af-710f18c421ac-assignmentNode-db587bec-89f6-4981-9030-005a44a0d68c",
+			"type": "default",
+			"source": "logNode-0c1681d4-ff6c-4210-b8af-710f18c421ac",
+			"target": "assignmentNode-db587bec-89f6-4981-9030-005a44a0d68c",
+			"labelBgPadding": [
+				8,
+				4
+			],
+			"labelBgBorderRadius": 4,
+			"label": "",
+			"labelBgStyle": {
+				"fill": "#009688",
+				"color": "#ffffff",
+				"fillOpacity": 0.7
+			},
+			"labelShowBg": true,
+			"sourceHandle": "source_logNode-0c1681d4-ff6c-4210-b8af-710f18c421ac"
 		}
 	],
 	"viewport": {
-		"x": 5,
-		"y": 183,
+		"x": 14,
+		"y": 241,
 		"zoom": 1
 	}
 }
