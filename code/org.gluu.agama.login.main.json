@@ -1231,7 +1231,7 @@
 					"nodeColor": "",
 					"titleColor": "",
 					"descColor": "",
-					"displayName": "",
+					"displayName": "Variables assigned phone/username",
 					"hasComment": true,
 					"comment": ""
 				}
@@ -2328,14 +2328,14 @@
 					"descColor": "",
 					"displayName": "",
 					"hasComment": true,
-					"comment": ""
+					"comment": "\"Check phone number for user +++++++:\" username phone"
 				}
 			},
 			"measured": {
 				"width": 170,
 				"height": 123
 			},
-			"selected": false,
+			"selected": true,
 			"dragging": false
 		},
 		{
@@ -3899,8 +3899,8 @@
 		}
 	],
 	"viewport": {
-		"x": -2571.128547517831,
-		"y": -494.6512715210463,
+		"x": -3050.128547517831,
+		"y": -600.6512715210463,
 		"zoom": 1
 	}
 }
