@@ -33,7 +33,7 @@
 				"width": 170,
 				"height": 123
 			},
-			"selected": true,
+			"selected": false,
 			"deletable": false,
 			"dragging": false
 		},
@@ -1878,7 +1878,7 @@
 						{
 							"variableTypeCheck": true,
 							"assignmentExpression": "\"Please try again with a different mobile number.\"",
-							"assignedVariableName": "uiFeedback.errorMessage"
+							"assignedVariableName": "uiFeedback.infoMessage"
 						}
 					],
 					"nodeIcon": "material-symbols:equal",
@@ -1894,7 +1894,7 @@
 				"width": 170,
 				"height": 123
 			},
-			"selected": false
+			"selected": true
 		}
 	],
 	"edges": [
@@ -2841,8 +2841,8 @@
 		}
 	],
 	"viewport": {
-		"x": 0,
-		"y": 0,
-		"zoom": 1
+		"x": -5436.169027540846,
+		"y": -922.0030577719367,
+		"zoom": 1.161508731925722
 	}
 }
