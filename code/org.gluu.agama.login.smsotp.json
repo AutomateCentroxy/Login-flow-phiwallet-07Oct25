@@ -936,7 +936,7 @@
 				"width": 110,
 				"height": 60
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false
 		},
 		{
@@ -962,9 +962,9 @@
 					"displayName": "",
 					"hasComment": true,
 					"comment": "",
-					"variableField": "",
-					"valueField": "",
-					"conditionInputField": "",
+					"variableField": "otpValidationResult",
+					"valueField": "yes",
+					"conditionInputField": "is",
 					"nodeIcon": "material-symbols:pip-exit-outline-rounded"
 				}
 			},
@@ -972,7 +972,7 @@
 				"width": 170,
 				"height": 123
 			},
-			"selected": false
+			"selected": true
 		}
 	],
 	"edges": [
