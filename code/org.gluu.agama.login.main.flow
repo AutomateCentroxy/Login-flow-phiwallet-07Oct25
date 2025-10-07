@@ -65,6 +65,8 @@ Repeat 6 times max
                                    RRF "acknowledgement.ftlh" uiFeedback
                                    // Password Vealidation completed successfully!
                                    Finish credentials.username
+                              Otherwise
+                                   uiFeedback.errorMessage = "Please Try Again!"
                          Otherwise
                               // "This phone is already used by another account. Please enter a different one.
                               Log "@info This phone is already used by another account. Please enter a different one."
@@ -87,5 +89,5 @@ Repeat 6 times max
 // The login flow will end here with failure.
 Log "@info The maximum login attempt has been reached!"
 // Maximum attempts reached. Password validation failed!
-it_aorsh = {success:false, error: "Password validation failed!"}
-Finish it_aorsh
+it_czxuz = {success:false, error: "Password validation failed!"}
+Finish it_czxuz
