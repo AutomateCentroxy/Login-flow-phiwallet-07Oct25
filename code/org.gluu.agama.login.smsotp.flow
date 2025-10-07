@@ -10,10 +10,10 @@ otpUiFeedback.errorMessage = ""
 otpUiFeedback.infoMessage = "An OTP code has been send to you on your mobile phone."
 maxSMS = Repeat 4 times max
      //  Show UI to collect OTP code from user.
-     otpCreds = RRF "smsOtp.ftlh" otpValidationResult
+     otpCreds = RRF "smsOtp.ftlh" otpUiFeedback
      When otpCreds.changenumber is "yes"
-          it_vqtil = {success:false, error: "Your error message here"}
-          Finish it_vqtil
+          it_oibtx = {success:false, error: "Your error message here"}
+          Finish it_oibtx
      Otherwise
           When otpCreds.hasRequestedNewCode is "yes"
                // Log new code request
