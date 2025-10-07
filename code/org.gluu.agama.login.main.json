@@ -1119,7 +1119,7 @@
 				"width": 170,
 				"height": 123
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false
 		},
 		{
@@ -2594,7 +2594,7 @@
 					"assignments": [
 						{
 							"variableTypeCheck": true,
-							"assignmentExpression": "\"Please Try Again!\"",
+							"assignmentExpression": "\"Please try again with a different mobile number.\"",
 							"assignedVariableName": "uiFeedback.errorMessage"
 						}
 					],
@@ -2611,7 +2611,7 @@
 				"width": 170,
 				"height": 123
 			},
-			"selected": false
+			"selected": true
 		}
 	],
 	"edges": [
@@ -3899,8 +3899,8 @@
 		}
 	],
 	"viewport": {
-		"x": -151.6856817749965,
-		"y": -23.601259441673676,
-		"zoom": 0.5
+		"x": -4152.622235673383,
+		"y": -712.8778846449422,
+		"zoom": 1
 	}
 }
