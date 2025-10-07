@@ -57,6 +57,8 @@ Repeat 6 times max
                               otpFeedBack = Trigger org.gluu.agama.login.smsotp validationService username phone
                               // OTP Code validation is completed.
                               Log "@info OTP Code validation completed with status: " otpFeedBack
+                              // Check if OTP validation vas okay
+                              When otpFeedBack.success is true
                          Otherwise
                               // "This phone is already used by another account. Please enter a different one.
                               Log "@info This phone is already used by another account. Please enter a different one."
@@ -79,5 +81,5 @@ Repeat 6 times max
 // The login flow will end here with failure.
 Log "@info The maximum login attempt has been reached!"
 // Maximum attempts reached. Password validation failed!
-it_jheff = {success:false, error: "Password validation failed!"}
-Finish it_jheff
+it_ifrnn = {success:false, error: "Password validation failed!"}
+Finish it_ifrnn
