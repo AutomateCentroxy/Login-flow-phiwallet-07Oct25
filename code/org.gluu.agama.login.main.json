@@ -2083,8 +2083,8 @@
 			"id": "callNode-1d2f389c-bd60-4956-9473-0327e4ed8e4a",
 			"type": "callNode",
 			"position": {
-				"x": 5550.1844756460305,
-				"y": 1313.5536583154949
+				"x": 5438.679637381161,
+				"y": 1332.1377980263064
 			},
 			"data": {
 				"id": "callNode-1d2f389c-bd60-4956-9473-0327e4ed8e4a",
@@ -2093,7 +2093,7 @@
 					"x": 6824.940637392266,
 					"y": 1570.1919900854941
 				},
-				"previousNodeId": "logNode-f3c8f303-7841-4234-9b15-0880746d27a9",
+				"previousNodeId": "whenNode-c0e73cb7-0559-4cab-84c5-f07177d03f29",
 				"agamaData": {
 					"javaClassName": "",
 					"javaMethodName": "markPhoneAsVerified",
@@ -2112,7 +2112,8 @@
 					"hasComment": true,
 					"comment": "",
 					"asssignedVariableName": "PhonenumberUpdated"
-				}
+				},
+				"branching": "success"
 			},
 			"measured": {
 				"width": 170,
@@ -2125,8 +2126,8 @@
 			"id": "assignmentNode-274bf398-4ac5-471e-b20f-bcd99b05e778",
 			"type": "assignmentNode",
 			"position": {
-				"x": 5882.657269879273,
-				"y": 1354.232699711139
+				"x": 5801.351658644472,
+				"y": 1371.655330690025
 			},
 			"data": {
 				"id": "assignmentNode-274bf398-4ac5-471e-b20f-bcd99b05e778",
@@ -2529,7 +2530,7 @@
 				"width": 170,
 				"height": 123
 			},
-			"selected": false
+			"selected": true
 		},
 		{
 			"id": "whenNode-c0e73cb7-0559-4cab-84c5-f07177d03f29",
@@ -2571,7 +2572,7 @@
 				"width": 110,
 				"height": 60
 			},
-			"selected": true
+			"selected": false
 		}
 	],
 	"edges": [
@@ -3819,11 +3820,29 @@
 			},
 			"labelShowBg": true,
 			"sourceHandle": "source_logNode-14db810f-8920-46b2-89b0-f63e7de36151"
+		},
+		{
+			"source": "whenNode-c0e73cb7-0559-4cab-84c5-f07177d03f29",
+			"sourceHandle": "source_whenNode-c0e73cb7-0559-4cab-84c5-f07177d03f29_success",
+			"target": "callNode-1d2f389c-bd60-4956-9473-0327e4ed8e4a",
+			"targetHandle": "target_callNode-1d2f389c-bd60-4956-9473-0327e4ed8e4a",
+			"label": "Condition met",
+			"labelBgPadding": [
+				8,
+				4
+			],
+			"labelBgBorderRadius": 4,
+			"labelBgStyle": {
+				"fill": "#009688",
+				"color": "#ffffff",
+				"fillOpacity": 0.7
+			},
+			"id": "xy-edge__whenNode-c0e73cb7-0559-4cab-84c5-f07177d03f29source_whenNode-c0e73cb7-0559-4cab-84c5-f07177d03f29_success-callNode-1d2f389c-bd60-4956-9473-0327e4ed8e4atarget_callNode-1d2f389c-bd60-4956-9473-0327e4ed8e4a"
 		}
 	],
 	"viewport": {
-		"x": -4120.981725626796,
-		"y": -683.2742020157457,
-		"zoom": 0.9100388240808991
+		"x": -3481.1588450933023,
+		"y": -716.1275341009034,
+		"zoom": 0.860949188338904
 	}
 }
