@@ -121,7 +121,7 @@
 				"width": 170,
 				"height": 123
 			},
-			"selected": true
+			"selected": false
 		},
 		{
 			"id": "repeatNode-e777fc61-61cf-4ad5-80fe-ebc0f6f2dd0c",
@@ -173,8 +173,8 @@
 				"previousNodeId": "repeatNode-e777fc61-61cf-4ad5-80fe-ebc0f6f2dd0c",
 				"branching": "continue",
 				"agamaData": {
-					"logMessage": "",
-					"logLevel": "",
+					"logMessage": "\"OTP verification loop completed\"",
+					"logLevel": "info",
 					"nodeIcon": "octicon:log-16",
 					"nodeColor": "",
 					"titleColor": "",
@@ -187,7 +187,8 @@
 			"measured": {
 				"width": 170,
 				"height": 123
-			}
+			},
+			"selected": false
 		},
 		{
 			"id": "assignmentNode-dfb2a357-6a4b-44f0-a228-994272a3f4a3",
@@ -205,7 +206,13 @@
 				},
 				"previousNodeId": "logNode-631ae1e8-5ced-44b4-9aa2-b378e791b389",
 				"agamaData": {
-					"assignments": [],
+					"assignments": [
+						{
+							"variableTypeCheck": true,
+							"assignmentExpression": "{ success: false, error: \"ExceededTheNumberOfAttemptsAllowed\" }",
+							"assignedVariableName": "it_otpmax"
+						}
+					],
 					"nodeIcon": "material-symbols:equal",
 					"nodeColor": "",
 					"titleColor": "",
@@ -218,7 +225,8 @@
 			"measured": {
 				"width": 170,
 				"height": 123
-			}
+			},
+			"selected": false
 		},
 		{
 			"id": "finishNode-ce650b52-29db-45d1-a8e0-e9a0d3c522f0",
@@ -241,16 +249,18 @@
 					"descColor": "",
 					"displayName": "",
 					"hasComment": true,
-					"comment": "",
+					"comment": "SMS OTP error",
 					"flowfilename": "",
-					"returnVariable": "",
-					"nodeIcon": "material-symbols:line-end-square-rounded"
+					"returnVariable": "it_otpmax",
+					"nodeIcon": "material-symbols:line-end-square-rounded",
+					"finishMode": "withVariable"
 				}
 			},
 			"measured": {
 				"width": 170,
 				"height": 123
-			}
+			},
+			"selected": true
 		},
 		{
 			"id": "rrfNode-e6cd3059-202d-4119-8ea0-a4b3a1c4632a",
@@ -747,8 +757,8 @@
 		}
 	],
 	"viewport": {
-		"x": 0,
-		"y": 0,
+		"x": -621,
+		"y": 57,
 		"zoom": 1
 	}
 }
