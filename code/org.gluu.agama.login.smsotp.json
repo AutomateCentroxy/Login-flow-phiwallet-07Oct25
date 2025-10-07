@@ -593,7 +593,7 @@
 					"descColor": "",
 					"displayName": "",
 					"hasComment": true,
-					"comment": ""
+					"comment": "New OTP code send successfully!"
 				}
 			},
 			"measured": {
@@ -665,14 +665,14 @@
 					"descColor": "",
 					"displayName": "Log error code",
 					"hasComment": true,
-					"comment": ""
+					"comment": "Fail to resend new code to user."
 				}
 			},
 			"measured": {
 				"width": 168,
 				"height": 120
 			},
-			"selected": false
+			"selected": true
 		},
 		{
 			"id": "assignmentNode-e83d1456-9fdd-4e3c-9ac2-52e8c0a17add",
@@ -710,7 +710,7 @@
 				"width": 170,
 				"height": 123
 			},
-			"selected": true
+			"selected": false
 		}
 	],
 	"edges": [
