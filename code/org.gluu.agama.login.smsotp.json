@@ -21,7 +21,7 @@
 					"basepath": "",
 					"configParams": "{}",
 					"nodeIcon": "material-symbols:line-start-square",
-					"timeout": "",
+					"timeout": "900",
 					"inputs": "validationService username phone",
 					"configs": "",
 					"flowname": "org.gluu.agama.login.smsotp",
@@ -35,7 +35,7 @@
 				"width": 170,
 				"height": 123
 			},
-			"selected": false
+			"selected": true
 		},
 		{
 			"id": "logNode-0c1681d4-ff6c-4210-b8af-710f18c421ac",
@@ -154,7 +154,7 @@
 				"width": 170,
 				"height": 123
 			},
-			"selected": true
+			"selected": false
 		},
 		{
 			"id": "logNode-631ae1e8-5ced-44b4-9aa2-b378e791b389",
@@ -1468,8 +1468,8 @@
 		}
 	],
 	"viewport": {
-		"x": -222,
-		"y": 117,
+		"x": 0,
+		"y": 0,
 		"zoom": 1
 	}
 }
