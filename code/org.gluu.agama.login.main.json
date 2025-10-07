@@ -1110,7 +1110,7 @@
 				"previousNodeId": "assignmentNode-2f7bc226-3376-4c1f-b95e-0c359ca6a7b9",
 				"agamaData": {
 					"nodeIcon": "material-symbols:event-repeat-outline-rounded",
-					"maxIteration": "30",
+					"maxIteration": "10",
 					"maxIterationVariableName": "ValidMobileNum",
 					"nodeColor": "",
 					"titleColor": "",
@@ -2841,8 +2841,8 @@
 		}
 	],
 	"viewport": {
-		"x": -1126.8739188836976,
-		"y": -7.14759007324426,
-		"zoom": 0.7412335049014176
+		"x": -553.6022050390684,
+		"y": -7.99799905962891,
+		"zoom": 0.6381643844144765
 	}
 }
