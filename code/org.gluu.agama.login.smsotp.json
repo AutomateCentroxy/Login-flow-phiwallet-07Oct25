@@ -940,15 +940,15 @@
 			"dragging": false
 		},
 		{
-			"id": "quitNode-2a6a0342-dcb4-42a6-97be-88ed8522bf65",
-			"type": "quitNode",
+			"id": "finishNode-caf5264a-c105-48d5-8cc2-746ba198e167",
+			"type": "finishNode",
 			"position": {
 				"x": 1235.7757833876265,
 				"y": 777.0516885533342
 			},
 			"data": {
-				"id": "quitNode-2a6a0342-dcb4-42a6-97be-88ed8522bf65",
-				"type": "quitNode",
+				"id": "finishNode-caf5264a-c105-48d5-8cc2-746ba198e167",
+				"type": "finishNode",
 				"position": {
 					"x": 1235.7757833876265,
 					"y": 777.0516885533342
@@ -959,13 +959,13 @@
 					"nodeColor": "",
 					"titleColor": "",
 					"descColor": "",
-					"displayName": "",
+					"displayName": "The flow has been completed with error.",
 					"hasComment": true,
 					"comment": "",
-					"variableField": "otpValidationResult",
-					"valueField": "yes",
-					"conditionInputField": "is",
-					"nodeIcon": "material-symbols:pip-exit-outline-rounded"
+					"flowfilename": "",
+					"returnVariable": "\"User Request changed phone number\"",
+					"finishMode": "withFailure",
+					"nodeIcon": "material-symbols:line-end-square-rounded"
 				}
 			},
 			"measured": {
@@ -1432,10 +1432,10 @@
 			"id": "xy-edge__whenNode-f66079c5-2d85-4d15-bba5-4623d7475e9esource_whenNode-f66079c5-2d85-4d15-bba5-4623d7475e9e_otherwise-whenNode-44e2b879-995e-4bf8-ac0c-02412791dfa0target_whenNode-44e2b879-995e-4bf8-ac0c-02412791dfa0"
 		},
 		{
-			"id": "whenNode-f66079c5-2d85-4d15-bba5-4623d7475e9e-quitNode-2a6a0342-dcb4-42a6-97be-88ed8522bf65",
+			"id": "whenNode-f66079c5-2d85-4d15-bba5-4623d7475e9e-finishNode-caf5264a-c105-48d5-8cc2-746ba198e167",
 			"type": "default",
 			"source": "whenNode-f66079c5-2d85-4d15-bba5-4623d7475e9e",
-			"target": "quitNode-2a6a0342-dcb4-42a6-97be-88ed8522bf65",
+			"target": "finishNode-caf5264a-c105-48d5-8cc2-746ba198e167",
 			"labelBgPadding": [
 				8,
 				4
@@ -1452,8 +1452,8 @@
 		}
 	],
 	"viewport": {
-		"x": 251.1372024505206,
-		"y": 36.53343196397674,
-		"zoom": 0.6037402957432483
+		"x": -488.1777647589795,
+		"y": -230.79475322206724,
+		"zoom": 0.9460576467255961
 	}
 }
