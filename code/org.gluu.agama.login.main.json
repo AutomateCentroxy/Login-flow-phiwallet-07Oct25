@@ -1878,7 +1878,7 @@
 						{
 							"variableTypeCheck": true,
 							"assignmentExpression": "\"Please try again with a different mobile number.\"",
-							"assignedVariableName": "uiFeedback.infoMessage"
+							"assignedVariableName": "uiFeedback.errorMessage"
 						}
 					],
 					"nodeIcon": "material-symbols:equal",
@@ -2841,8 +2841,8 @@
 		}
 	],
 	"viewport": {
-		"x": -5347.042111166573,
-		"y": -928.3065769840209,
-		"zoom": 1.161508731925722
+		"x": -4114.511431051864,
+		"y": -778.3414335961679,
+		"zoom": 1
 	}
 }
