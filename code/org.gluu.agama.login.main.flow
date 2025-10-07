@@ -68,7 +68,7 @@ Repeat 6 times max
                                    // Password Vealidation completed successfully!
                                    Finish credentials.username
                               Otherwise
-                                   uiFeedback.infoMessage = "Please try again with a different mobile number."
+                                   uiFeedback.errorMessage = "Please try again with a different mobile number."
                          Otherwise
                               // "This phone is already used by another account. Please enter a different one.
                               Log "@info This phone is already used by another account. Please enter a different one."
@@ -91,5 +91,5 @@ Repeat 6 times max
 // The login flow will end here with failure.
 Log "@info The maximum login attempt has been reached!"
 // Maximum attempts reached. Password validation failed!
-it_ljimj = {success:false, error: "Password validation failed!"}
-Finish it_ljimj
+it_xxdvt = {success:false, error: "Password validation failed!"}
+Finish it_xxdvt
