@@ -1,2 +1,4 @@
+// Start subflow for user otp code validation
 Flow org.gluu.agama.login.smsotp
      Basepath ""
+     Inputs validationService username phone
