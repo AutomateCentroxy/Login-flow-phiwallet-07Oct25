@@ -2,3 +2,5 @@
 Flow org.gluu.agama.login.smsotp
      Basepath ""
      Inputs validationService username phone
+// Log flow imputs provided by the flow caller.
+Log "@info Information received from the caller: " username phone
