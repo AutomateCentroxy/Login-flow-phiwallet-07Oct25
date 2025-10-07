@@ -181,14 +181,14 @@
 					"descColor": "",
 					"displayName": "",
 					"hasComment": true,
-					"comment": ""
+					"comment": "\"OTP verification loop completed\""
 				}
 			},
 			"measured": {
 				"width": 170,
 				"height": 123
 			},
-			"selected": false
+			"selected": true
 		},
 		{
 			"id": "assignmentNode-dfb2a357-6a4b-44f0-a228-994272a3f4a3",
@@ -217,7 +217,7 @@
 					"nodeColor": "",
 					"titleColor": "",
 					"descColor": "",
-					"displayName": "",
+					"displayName": "Max SMS Otp tried",
 					"hasComment": true,
 					"comment": ""
 				}
@@ -260,7 +260,7 @@
 				"width": 170,
 				"height": 123
 			},
-			"selected": true
+			"selected": false
 		},
 		{
 			"id": "rrfNode-e6cd3059-202d-4119-8ea0-a4b3a1c4632a",
