@@ -4,3 +4,6 @@ Flow org.gluu.agama.login.smsotp
      Inputs validationService username phone
 // Log flow imputs provided by the flow caller.
 Log "@info Information received from the caller: " username phone
+otpValidationResult = false
+uiFeedback.infoMessage = "Otp send to the registered mobile number"
+uiFeedback.errorMessage = ""
