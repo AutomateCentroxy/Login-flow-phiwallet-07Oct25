@@ -50,7 +50,7 @@ Repeat 6 times max
                          UniqueNumber = Call validationService isPhoneUnique username phone
                          When UniqueNumber is true
                               // sent sms otp
-                              smsOtpSend = Call validationService sendOTPCode credentials.username phone
+                              smsOtpSend = Call validationService sendOTPCode username phone
                               // The OTP Code has been send to user.
                               Log "@info OTP generated and send to: " phone
                               otpValidationResult = false
@@ -117,5 +117,5 @@ Repeat 6 times max
 // The login flow will end here with failure.
 Log "@info The maximum login attempt has been reached!"
 // Maximum attempts reached. Password validation failed!
-it_ypaqs = {success:false, error: "Password validation failed!"}
-Finish it_ypaqs
+it_fpkdm = {success:false, error: "Password validation failed!"}
+Finish it_fpkdm
