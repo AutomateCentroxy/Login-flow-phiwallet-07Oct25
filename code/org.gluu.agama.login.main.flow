@@ -1,6 +1,6 @@
 Flow org.gluu.agama.login.main
      Basepath ""
-     Timeout 50000 seconds
+     Timeout 900 seconds
      Configs conf
 Log "@info Start execution of the password validation flow."
 //  Create json variable for UI feedback.
@@ -91,5 +91,5 @@ Repeat 6 times max
 // The login flow will end here with failure.
 Log "@info The maximum login attempt has been reached!"
 // Maximum attempts reached. Password validation failed!
-it_ralmc = {success:false, error: "Password validation failed!"}
-Finish it_ralmc
+it_iddba = {success:false, error: "Password validation failed!"}
+Finish it_iddba
