@@ -94,8 +94,8 @@
 						},
 						{
 							"variableTypeCheck": true,
-							"assignmentExpression": "\"An OTP code has been send to you on your mobile phone.\"",
-							"assignedVariableName": "otpUiFeedback.infoMessage"
+							"assignmentExpression": "{}",
+							"assignedVariableName": "otpUiFeedback"
 						},
 						{
 							"variableTypeCheck": true,
@@ -104,8 +104,8 @@
 						},
 						{
 							"variableTypeCheck": true,
-							"assignmentExpression": "{}",
-							"assignedVariableName": "otpUiFeedback"
+							"assignmentExpression": "\"An OTP code has been send to you on your mobile phone.\"",
+							"assignedVariableName": "otpUiFeedback.infoMessage"
 						}
 					],
 					"nodeIcon": "material-symbols:equal",
@@ -1452,8 +1452,8 @@
 		}
 	],
 	"viewport": {
-		"x": 203.09461520603816,
-		"y": 70.04730760301908,
-		"zoom": 1
+		"x": -5.777982561866224,
+		"y": 108.89111071385435,
+		"zoom": 0.7412335049014176
 	}
 }
