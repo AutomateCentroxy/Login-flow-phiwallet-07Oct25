@@ -752,7 +752,7 @@
 				"width": 110,
 				"height": 60
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false
 		},
 		{
@@ -844,13 +844,13 @@
 				"previousNodeId": "whenNode-b2d95e94-c799-4c23-97aa-0e8c2beb47a7",
 				"branching": "success",
 				"agamaData": {
-					"logMessage": "",
-					"logLevel": "",
+					"logMessage": "\"OTP validated Successfully\"",
+					"logLevel": "info",
 					"nodeIcon": "octicon:log-16",
 					"nodeColor": "",
 					"titleColor": "",
 					"descColor": "",
-					"displayName": "",
+					"displayName": "OTP validated Successfully",
 					"hasComment": true,
 					"comment": ""
 				}
@@ -858,7 +858,8 @@
 			"measured": {
 				"width": 168,
 				"height": 120
-			}
+			},
+			"selected": true
 		}
 	],
 	"edges": [
