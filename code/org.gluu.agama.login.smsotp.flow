@@ -14,7 +14,8 @@ maxSMS = Repeat 4 times max
      When otpCreds.hasRequestedNewCode is "yes"
           // Log new code request
           Log "@info User has requested a new code."
-          Call __________#__________ 
+          // Resend otp
+          resendHasSucceed = Call validationService sendOTPCode username phone
      Otherwise
           //  Add log entry with collected code in log file.
           Log "@info Information provided by the user is : " otpCreds.code
