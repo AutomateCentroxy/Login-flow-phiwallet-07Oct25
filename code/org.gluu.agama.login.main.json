@@ -1220,6 +1220,11 @@
 							"variableTypeCheck": true,
 							"assignmentExpression": "phoneInput.phoneNumber",
 							"assignedVariableName": "phone"
+						},
+						{
+							"variableTypeCheck": true,
+							"assignmentExpression": "credentials.username",
+							"assignedVariableName": "username"
 						}
 					],
 					"nodeIcon": "material-symbols:equal",
@@ -1235,7 +1240,7 @@
 				"width": 170,
 				"height": 123
 			},
-			"selected": false,
+			"selected": true,
 			"dragging": false
 		},
 		{
@@ -1929,7 +1934,7 @@
 				"width": 170,
 				"height": 123
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false
 		},
 		{
@@ -3805,8 +3810,8 @@
 		}
 	],
 	"viewport": {
-		"x": -703.3917469440175,
-		"y": 7.403771904524092,
-		"zoom": 0.5
+		"x": -2350.3266426195896,
+		"y": -357.130343867987,
+		"zoom": 0.860949188338904
 	}
 }
