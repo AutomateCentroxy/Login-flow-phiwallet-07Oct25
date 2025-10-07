@@ -194,8 +194,8 @@
 			"id": "finishNode-ce650b52-29db-45d1-a8e0-e9a0d3c522f0",
 			"type": "finishNode",
 			"position": {
-				"x": 1412.687618075502,
-				"y": 0.962281701856952
+				"x": 1265.1760091209353,
+				"y": 17.223403948817065
 			},
 			"data": {
 				"id": "finishNode-ce650b52-29db-45d1-a8e0-e9a0d3c522f0",
@@ -213,7 +213,7 @@
 					"hasComment": true,
 					"comment": "SMS OTP error",
 					"flowfilename": "",
-					"returnVariable": "otpUiFeedback.errorMessage",
+					"returnVariable": "otpValidationResult",
 					"nodeIcon": "material-symbols:line-end-square-rounded",
 					"finishMode": "withVariable"
 				}
