@@ -624,6 +624,11 @@
 							"variableTypeCheck": true,
 							"assignmentExpression": "\"An OTP code has been send to your register mobile number.\"",
 							"assignedVariableName": "otpUiFeedback.infoMessage"
+						},
+						{
+							"variableTypeCheck": true,
+							"assignmentExpression": "\"\"",
+							"assignedVariableName": "otpUiFeedback.errorMessage"
 						}
 					],
 					"nodeIcon": "material-symbols:equal",
