@@ -154,7 +154,7 @@
 				"width": 170,
 				"height": 123
 			},
-			"selected": true
+			"selected": false
 		},
 		{
 			"id": "logNode-631ae1e8-5ced-44b4-9aa2-b378e791b389",
@@ -209,8 +209,13 @@
 					"assignments": [
 						{
 							"variableTypeCheck": true,
-							"assignmentExpression": "{ success: false, error: \"ExceededTheNumberOfAttemptsAllowed\" }",
-							"assignedVariableName": "it_otpmax"
+							"assignmentExpression": "\"ExceededTheNumberOfAttemptsAllowed\"",
+							"assignedVariableName": "otpUiFeedback.errorMessage"
+						},
+						{
+							"variableTypeCheck": true,
+							"assignmentExpression": "false",
+							"assignedVariableName": "success"
 						}
 					],
 					"nodeIcon": "material-symbols:equal",
@@ -251,7 +256,7 @@
 					"hasComment": true,
 					"comment": "SMS OTP error",
 					"flowfilename": "",
-					"returnVariable": "it_otpmax",
+					"returnVariable": "otpUiFeedback.errorMessage",
 					"nodeIcon": "material-symbols:line-end-square-rounded",
 					"finishMode": "withVariable"
 				}
@@ -260,7 +265,7 @@
 				"width": 170,
 				"height": 123
 			},
-			"selected": false
+			"selected": true
 		},
 		{
 			"id": "rrfNode-e6cd3059-202d-4119-8ea0-a4b3a1c4632a",
@@ -1468,8 +1473,8 @@
 		}
 	],
 	"viewport": {
-		"x": -191.0996293023893,
-		"y": 71.1972691741179,
+		"x": -370.34448611516905,
+		"y": 91.77163094382786,
 		"zoom": 0.7412335049014176
 	}
 }
