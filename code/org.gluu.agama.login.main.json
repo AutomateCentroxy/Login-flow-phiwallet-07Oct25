@@ -1879,6 +1879,11 @@
 							"variableTypeCheck": true,
 							"assignmentExpression": "\"Please try again with a different mobile number.\"",
 							"assignedVariableName": "uiFeedback.infoMessage"
+						},
+						{
+							"variableTypeCheck": true,
+							"assignmentExpression": "otpValidationResult",
+							"assignedVariableName": "uiFeedback.errorMessage"
 						}
 					],
 					"nodeIcon": "material-symbols:equal",
@@ -2841,8 +2846,8 @@
 		}
 	],
 	"viewport": {
-		"x": -5436.169027540846,
-		"y": -922.0030577719367,
+		"x": -5479.094172155554,
+		"y": -1081.4875783292994,
 		"zoom": 1.161508731925722
 	}
 }
