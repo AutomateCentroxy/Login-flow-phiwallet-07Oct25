@@ -11,37 +11,40 @@ otpUiFeedback = {}
 maxSMS = Repeat 4 times max
      //  Show UI to collect OTP code from user.
      otpCreds = RRF "smsOtp.ftlh" otpValidationResult
-     When otpCreds.hasRequestedNewCode is "yes"
-          // Log new code request
-          Log "@info User has requested a new code."
-          // Resend otp
-          resendHasSucceed = Call validationService sendOTPCode username phone
-          When resendHasSucceed is null
-               // Fail to resend new code to user.
-               Log "@info Fail to resend new code to user. " resendHasSucceed
-               // "Error occurs while sending new code to you. Please contact site administrator."
-               otpUiFeedback.errorMessage = "Error occurs while sending new code to you. Please contact site administrator."
-          // New OTP code send successfully!
-          Log "@info New OTP code send successfully!" resendHasSucceed
-          // "A new OTP code has been send to you on your mobile phone."
-          otpUiFeedback.infoMessage = "A new OTP code has been send to you on your mobile phone."
+     When 
+          Quit When __________ __________ __________
      Otherwise
-          //  Add log entry with collected code in log file.
-          Log "@info Information provided by the user is : " otpCreds.code
-          //  Validate the OTP code provided by the user.
-          otpValidationResult = Call validationService validateOTPCode phone otpCreds.code
-          // Add log entry withvalidation result in log file.
-          Log "@info OTP validation result is:" otpValidationResult
-          // If otp validation was successful
-          When otpValidationResult is true
-               Log "@info OTP validated Successfully"
-               // OTP flow completed successfully.
-               Finish otpValidationResult
+          When otpCreds.hasRequestedNewCode is "yes"
+               // Log new code request
+               Log "@info User has requested a new code."
+               // Resend otp
+               resendHasSucceed = Call validationService sendOTPCode username phone
+               When resendHasSucceed is null
+                    // Fail to resend new code to user.
+                    Log "@info Fail to resend new code to user. " resendHasSucceed
+                    // "Error occurs while sending new code to you. Please contact site administrator."
+                    otpUiFeedback.errorMessage = "Error occurs while sending new code to you. Please contact site administrator."
+               // New OTP code send successfully!
+               Log "@info New OTP code send successfully!" resendHasSucceed
+               // "A new OTP code has been send to you on your mobile phone."
+               otpUiFeedback.infoMessage = "A new OTP code has been send to you on your mobile phone."
           Otherwise
-               // The maximum number of attempt has been reached.
-               Log "@info Invalid code provided "
-               // Provide feedback to user.
-               otpUiFeedback.errorMessage = "Invalid code provided."
+               //  Add log entry with collected code in log file.
+               Log "@info Information provided by the user is : " otpCreds.code
+               //  Validate the OTP code provided by the user.
+               otpValidationResult = Call validationService validateOTPCode phone otpCreds.code
+               // Add log entry withvalidation result in log file.
+               Log "@info OTP validation result is:" otpValidationResult
+               // If otp validation was successful
+               When otpValidationResult is true
+                    Log "@info OTP validated Successfully"
+                    // OTP flow completed successfully.
+                    Finish otpValidationResult
+               Otherwise
+                    // The maximum number of attempt has been reached.
+                    Log "@info Invalid code provided "
+                    // Provide feedback to user.
+                    otpUiFeedback.errorMessage = "Invalid code provided."
 // "OTP verification loop completed"
 Log "@info OTP verification loop completed"
 it_otpmax = { success: false, error: "ExceededTheNumberOfAttemptsAllowed" }
