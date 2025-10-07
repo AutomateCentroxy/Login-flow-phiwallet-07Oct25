@@ -7,3 +7,8 @@ Log "@info Information received from the caller: " username phone
 otpValidationResult = false
 uiFeedback.infoMessage = "Otp send to the registered mobile number"
 uiFeedback.errorMessage = ""
+Repeat __________ times max
+     RRF "__________" 
+     When 
+Log "@ " __________
+Finish __________
