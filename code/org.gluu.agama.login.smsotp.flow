@@ -18,7 +18,9 @@ maxSMS = Repeat 4 times max
           resendHasSucceed = Call validationService sendOTPCode username phone
           When resendHasSucceed is null
                Log "@ " __________
-          Log "@ " __________
+          Log "@info New OTP code send successfully!" resendHasSucceed
+          // "A new OTP code has been send to you on your mobile phone."
+          otpUiFeedback.infoMessage = "A new OTP code has been send to you on your mobile phone."
      Otherwise
           //  Add log entry with collected code in log file.
           Log "@info Information provided by the user is : " otpCreds.code
