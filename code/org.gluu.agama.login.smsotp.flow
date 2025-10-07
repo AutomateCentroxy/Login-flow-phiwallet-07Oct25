@@ -11,7 +11,7 @@ otpUiFeedback = {}
 maxSMS = Repeat 4 times max
      //  Show UI to collect OTP code from user.
      otpCreds = RRF "smsOtp.ftlh" otpValidationResult
-     When 
+     When otpCreds.changenumber is "yes"
           Quit When __________ __________ __________
      Otherwise
           When otpCreds.hasRequestedNewCode is "yes"
