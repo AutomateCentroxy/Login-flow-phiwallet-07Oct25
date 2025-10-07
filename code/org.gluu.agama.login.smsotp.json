@@ -963,7 +963,7 @@
 					"hasComment": true,
 					"comment": "",
 					"flowfilename": "",
-					"returnVariable": "\"User Request changed phone number\"",
+					"returnVariable": "Your error message here",
 					"finishMode": "withFailure",
 					"nodeIcon": "material-symbols:line-end-square-rounded"
 				}
