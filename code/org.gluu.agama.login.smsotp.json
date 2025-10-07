@@ -696,6 +696,11 @@
 							"variableTypeCheck": true,
 							"assignmentExpression": "\"Error occurs while sending new code to you. Please contact site administrator.\"",
 							"assignedVariableName": "otpUiFeedback.errorMessage"
+						},
+						{
+							"variableTypeCheck": true,
+							"assignmentExpression": "\"\"",
+							"assignedVariableName": "otpUiFeedback.infoMessage"
 						}
 					],
 					"nodeIcon": "material-symbols:equal",
@@ -711,7 +716,7 @@
 				"width": 170,
 				"height": 123
 			},
-			"selected": false
+			"selected": true
 		},
 		{
 			"id": "whenNode-b2d95e94-c799-4c23-97aa-0e8c2beb47a7",
@@ -831,7 +836,7 @@
 				"width": 170,
 				"height": 123
 			},
-			"selected": true
+			"selected": false
 		},
 		{
 			"id": "logNode-f389aa7e-9b9a-4282-9528-90861ef71558",
@@ -1457,8 +1462,8 @@
 		}
 	],
 	"viewport": {
-		"x": -1268.929738240592,
-		"y": 52.408821434558774,
-		"zoom": 0.860949188338904
+		"x": -1649.3758322137396,
+		"y": -295.48782280383045,
+		"zoom": 1
 	}
 }
