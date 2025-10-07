@@ -13,8 +13,8 @@ maxSMS = Repeat 4 times max
      //  Show UI to collect OTP code from user.
      otpCreds = RRF "smsOtp.ftlh" otpUiFeedback
      When otpCreds.changenumber is "yes"
-          it_htszc = {success:false, error: "Your error message here"}
-          Finish it_htszc
+          it_azkxq = {success:false, error: "Your error message here"}
+          Finish it_azkxq
      Otherwise
           When otpCreds.hasRequestedNewCode is "yes"
                // Log new code request
@@ -51,8 +51,6 @@ maxSMS = Repeat 4 times max
                     otpUiFeedback.errorMessage = "Invalid code provided."
                     otpUiFeedback.infoMessage = ""
 // "OTP verification loop completed"
-Log "@info OTP verification loop completed"
-otpUiFeedback.errorMessage = "ExceededTheNumberOfAttemptsAllowed"
-success = false
+Log "@info Maximum attempts reached. OTP validation failed!"
 // SMS OTP error
 Finish otpUiFeedback.errorMessage
