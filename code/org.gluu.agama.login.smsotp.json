@@ -121,7 +121,7 @@
 				"width": 170,
 				"height": 123
 			},
-			"selected": true
+			"selected": false
 		},
 		{
 			"id": "repeatNode-e777fc61-61cf-4ad5-80fe-ebc0f6f2dd0c",
@@ -811,6 +811,11 @@
 							"variableTypeCheck": true,
 							"assignmentExpression": "\"Invalid code provided.\"",
 							"assignedVariableName": "otpUiFeedback.errorMessage"
+						},
+						{
+							"variableTypeCheck": true,
+							"assignmentExpression": "\"\"",
+							"assignedVariableName": "otpUiFeedback.infoMessage"
 						}
 					],
 					"nodeIcon": "material-symbols:equal",
@@ -826,7 +831,7 @@
 				"width": 170,
 				"height": 123
 			},
-			"selected": false
+			"selected": true
 		},
 		{
 			"id": "logNode-f389aa7e-9b9a-4282-9528-90861ef71558",
@@ -1452,8 +1457,8 @@
 		}
 	],
 	"viewport": {
-		"x": -10.045496978031792,
-		"y": 40.5995095658655,
+		"x": -1268.929738240592,
+		"y": 52.408821434558774,
 		"zoom": 0.860949188338904
 	}
 }
