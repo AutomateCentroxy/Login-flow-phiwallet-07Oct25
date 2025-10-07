@@ -121,7 +121,7 @@
 				"width": 170,
 				"height": 123
 			},
-			"selected": true
+			"selected": false
 		},
 		{
 			"id": "repeatNode-e777fc61-61cf-4ad5-80fe-ebc0f6f2dd0c",
@@ -289,14 +289,14 @@
 					"displayName": "RRF",
 					"hasComment": true,
 					"comment": " Show UI to collect OTP code from user.",
-					"arguments": "otpValidationResult"
+					"arguments": "otpUiFeedback"
 				}
 			},
 			"measured": {
 				"width": 170,
 				"height": 123
 			},
-			"selected": false,
+			"selected": true,
 			"dragging": false
 		},
 		{
@@ -1452,8 +1452,8 @@
 		}
 	],
 	"viewport": {
-		"x": 74.8091329456206,
-		"y": 128.41699266660922,
-		"zoom": 0.860949188338904
+		"x": -153,
+		"y": -55,
+		"zoom": 1
 	}
 }
