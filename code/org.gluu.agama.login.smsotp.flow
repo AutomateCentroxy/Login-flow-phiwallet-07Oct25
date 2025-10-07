@@ -5,15 +5,15 @@ Flow org.gluu.agama.login.smsotp
 // Log flow imputs provided by the flow caller.
 Log "@info Information received from the caller: " username phone
 otpValidationResult = false
-otpUiFeedback.infoMessage = "An OTP code has been send to you on your mobile phone."
-otpUiFeedback.errorMessage = ""
 otpUiFeedback = {}
+otpUiFeedback.errorMessage = ""
+otpUiFeedback.infoMessage = "An OTP code has been send to you on your mobile phone."
 maxSMS = Repeat 4 times max
      //  Show UI to collect OTP code from user.
      otpCreds = RRF "smsOtp.ftlh" otpValidationResult
      When otpCreds.changenumber is "yes"
-          it_cpowc = {success:false, error: "Your error message here"}
-          Finish it_cpowc
+          it_dvdxk = {success:false, error: "Your error message here"}
+          Finish it_dvdxk
      Otherwise
           When otpCreds.hasRequestedNewCode is "yes"
                // Log new code request
