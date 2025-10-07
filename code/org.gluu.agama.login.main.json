@@ -1161,7 +1161,7 @@
 				"width": 170,
 				"height": 123
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false
 		},
 		{
@@ -2403,7 +2403,7 @@
 				},
 				"previousNodeId": "assignmentNode-efb4c742-925e-45b5-8d54-19bd43b674e8",
 				"agamaData": {
-					"logMessage": "\"Check phone number for user +++++++:\" credentials.username phone",
+					"logMessage": "\"Check phone number for user +++++++:\" username phone",
 					"logLevel": "info",
 					"nodeIcon": "octicon:log-16",
 					"nodeColor": "",
@@ -2418,7 +2418,7 @@
 				"width": 170,
 				"height": 123
 			},
-			"selected": false,
+			"selected": true,
 			"dragging": false
 		},
 		{
