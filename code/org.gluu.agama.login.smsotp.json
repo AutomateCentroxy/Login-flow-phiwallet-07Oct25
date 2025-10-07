@@ -94,20 +94,25 @@
 						},
 						{
 							"variableTypeCheck": true,
-							"assignmentExpression": "\"Otp send to the registered mobile number\"",
-							"assignedVariableName": "uiFeedback.infoMessage"
+							"assignmentExpression": "\"An OTP code has been send to you on your mobile phone.\"",
+							"assignedVariableName": "otpUiFeedback.infoMessage"
 						},
 						{
 							"variableTypeCheck": true,
 							"assignmentExpression": "\"\"",
-							"assignedVariableName": "uiFeedback.errorMessage"
+							"assignedVariableName": "otpUiFeedback.errorMessage"
+						},
+						{
+							"variableTypeCheck": true,
+							"assignmentExpression": "{}",
+							"assignedVariableName": "otpUiFeedback"
 						}
 					],
 					"nodeIcon": "material-symbols:equal",
 					"nodeColor": "",
 					"titleColor": "",
 					"descColor": "",
-					"displayName": "uiFeedback",
+					"displayName": "Declare feedback Variable",
 					"hasComment": true,
 					"comment": ""
 				}
@@ -116,7 +121,7 @@
 				"width": 170,
 				"height": 123
 			},
-			"selected": false
+			"selected": true
 		},
 		{
 			"id": "repeatNode-e777fc61-61cf-4ad5-80fe-ebc0f6f2dd0c",
@@ -149,7 +154,7 @@
 				"width": 170,
 				"height": 123
 			},
-			"selected": true
+			"selected": false
 		},
 		{
 			"id": "logNode-631ae1e8-5ced-44b4-9aa2-b378e791b389",
@@ -451,8 +456,8 @@
 				}
 			},
 			"measured": {
-				"width": 170,
-				"height": 123
+				"width": 168,
+				"height": 120
 			}
 		},
 		{
@@ -742,8 +747,8 @@
 		}
 	],
 	"viewport": {
-		"x": -106,
-		"y": 154,
+		"x": 0,
+		"y": 0,
 		"zoom": 1
 	}
 }
