@@ -21,7 +21,7 @@
 					"basepath": "",
 					"configParams": "{}",
 					"nodeIcon": "material-symbols:line-start-square",
-					"timeout": "500",
+					"timeout": "900",
 					"inputs": "",
 					"configs": "",
 					"flowname": "org.gluu.agama.login.reset",
@@ -35,7 +35,7 @@
 				"width": 170,
 				"height": 123
 			},
-			"selected": false
+			"selected": true
 		},
 		{
 			"id": "callNode-45f07374-6167-412c-a1c4-65c235db0c9c",
@@ -486,7 +486,7 @@
 				"width": 170,
 				"height": 123
 			},
-			"selected": true
+			"selected": false
 		},
 		{
 			"id": "whenNode-0b8a0581-138d-44a2-a3a6-07dc9b3f00b0",
@@ -1908,8 +1908,8 @@
 		}
 	],
 	"viewport": {
-		"x": -1065.2520108856443,
-		"y": -21.228977290776584,
-		"zoom": 0.7412335049014176
+		"x": 0,
+		"y": 0,
+		"zoom": 1
 	}
 }
