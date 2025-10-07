@@ -915,7 +915,14 @@
 					"variableField": "",
 					"valueField": "",
 					"conditionInputField": "",
-					"conditions": [],
+					"conditions": [
+						{
+							"variable": "otpCreds.changenumber",
+							"operator": "is",
+							"dataValue": "\"yes\"",
+							"combinator": "none"
+						}
+					],
 					"nodeIcon": "ph:swap",
 					"nodeColor": "",
 					"titleColor": "",
@@ -929,7 +936,7 @@
 				"width": 110,
 				"height": 60
 			},
-			"selected": false,
+			"selected": true,
 			"dragging": false
 		},
 		{
@@ -964,7 +971,8 @@
 			"measured": {
 				"width": 170,
 				"height": 123
-			}
+			},
+			"selected": false
 		}
 	],
 	"edges": [
@@ -1444,8 +1452,8 @@
 		}
 	],
 	"viewport": {
-		"x": -1098.4175892746177,
-		"y": -584.9363012833062,
-		"zoom": 1.4824670098028352
+		"x": 251.1372024505206,
+		"y": 36.53343196397674,
+		"zoom": 0.6037402957432483
 	}
 }
