@@ -59,6 +59,12 @@ Repeat 6 times max
                               Log "@info OTP Code validation completed with status: " otpFeedBack
                               // Check if OTP validation vas okay
                               When otpFeedBack.success is true
+                                   PhonenumberUpdated = Call validationService markPhoneAsVerified credentials.username phone
+                                   // "Phone Number updated in user profile"
+                                   uiFeedback.infoMessage = "Phone Number updated in user profile"
+                                   RRF "acknowledgement.ftlh" uiFeedback
+                                   // Password Vealidation completed successfully!
+                                   Finish credentials.username
                          Otherwise
                               // "This phone is already used by another account. Please enter a different one.
                               Log "@info This phone is already used by another account. Please enter a different one."
@@ -81,5 +87,5 @@ Repeat 6 times max
 // The login flow will end here with failure.
 Log "@info The maximum login attempt has been reached!"
 // Maximum attempts reached. Password validation failed!
-it_ifrnn = {success:false, error: "Password validation failed!"}
-Finish it_ifrnn
+it_aorsh = {success:false, error: "Password validation failed!"}
+Finish it_aorsh
