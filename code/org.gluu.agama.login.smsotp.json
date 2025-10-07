@@ -121,7 +121,7 @@
 				"width": 170,
 				"height": 123
 			},
-			"selected": false
+			"selected": true
 		},
 		{
 			"id": "repeatNode-e777fc61-61cf-4ad5-80fe-ebc0f6f2dd0c",
@@ -340,7 +340,7 @@
 				"width": 110,
 				"height": 60
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false
 		},
 		{
@@ -1452,8 +1452,8 @@
 		}
 	],
 	"viewport": {
-		"x": -159.54684325644234,
-		"y": 186.9442266956039,
-		"zoom": 0.5494271087884399
+		"x": 203.09461520603816,
+		"y": 70.04730760301908,
+		"zoom": 1
 	}
 }
