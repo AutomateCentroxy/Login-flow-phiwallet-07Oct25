@@ -7,13 +7,13 @@ Log "@info Information received from the caller: " username phone
 otpValidationResult = false
 otpUiFeedback = {}
 otpUiFeedback.errorMessage = ""
-otpUiFeedback.infoMessage = "An OTP code has been send to you on your mobile phone."
+otpUiFeedback.infoMessage = "An OTP code has been send to your register mobile number."
 maxSMS = Repeat 4 times max
      //  Show UI to collect OTP code from user.
      otpCreds = RRF "smsOtp.ftlh" otpUiFeedback
      When otpCreds.changenumber is "yes"
-          it_oibtx = {success:false, error: "Your error message here"}
-          Finish it_oibtx
+          it_eyjdh = {success:false, error: "Your error message here"}
+          Finish it_eyjdh
      Otherwise
           When otpCreds.hasRequestedNewCode is "yes"
                // Log new code request
