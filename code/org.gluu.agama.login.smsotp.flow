@@ -15,7 +15,8 @@ maxSMS = Repeat 4 times max
           Log "@ " __________
           Call __________#__________ 
      Otherwise
-          Log "@ " __________
+          //  Add log entry with collected code in log file.
+          Log "@info Information provided by the user is : " otpCreds.code
           Call __________#__________ 
           Log "@ " __________
 // "OTP verification loop completed"
