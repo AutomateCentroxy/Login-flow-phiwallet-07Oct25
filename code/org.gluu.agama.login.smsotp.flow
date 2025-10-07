@@ -19,7 +19,8 @@ maxSMS = Repeat 4 times max
           Log "@info Information provided by the user is : " otpCreds.code
           //  Validate the OTP code provided by the user.
           otpValidationResult = Call validationService validateOTPCode phone otpCreds.code
-          Log "@ " __________
+          // Add log entry withvalidation result in log file.
+          Log "@info OTP validation result is:" otpValidationResult
 // "OTP verification loop completed"
 Log "@info OTP verification loop completed"
 it_otpmax = { success: false, error: "ExceededTheNumberOfAttemptsAllowed" }
