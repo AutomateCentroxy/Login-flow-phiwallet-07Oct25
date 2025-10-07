@@ -828,7 +828,7 @@
 			"id": "finishNode-4f56a008-ed5a-46e1-a524-091c06683e06",
 			"type": "finishNode",
 			"position": {
-				"x": 2669.542000904783,
+				"x": 2668.542000904783,
 				"y": 1570.0796211618642
 			},
 			"data": {
@@ -1879,11 +1879,6 @@
 							"variableTypeCheck": true,
 							"assignmentExpression": "\"Please try again with a different mobile number.\"",
 							"assignedVariableName": "uiFeedback.infoMessage"
-						},
-						{
-							"variableTypeCheck": true,
-							"assignmentExpression": "otpValidationResult",
-							"assignedVariableName": "uiFeedback.errorMessage"
 						}
 					],
 					"nodeIcon": "material-symbols:equal",
@@ -2846,8 +2841,8 @@
 		}
 	],
 	"viewport": {
-		"x": -5479.094172155554,
-		"y": -1081.4875783292994,
+		"x": -5347.042111166573,
+		"y": -928.3065769840209,
 		"zoom": 1.161508731925722
 	}
 }
