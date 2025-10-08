@@ -454,7 +454,7 @@
 				"width": 110,
 				"height": 60
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false
 		},
 		{
@@ -920,25 +920,29 @@
 				"previousNodeId": "whenNode-0a0be718-8613-4e72-aaea-c24707001794",
 				"branching": "continue",
 				"agamaData": {
-					"javaClassName": "",
-					"javaMethodName": "",
+					"javaClassName": "org.gluu.agama.login.CounterHelper",
+					"javaMethodName": "increment",
 					"javaVariableName": "",
 					"exceptionVariableField": "",
 					"callType": "Call static method",
-					"arguments": [],
+					"arguments": [
+						"resendCount"
+					],
 					"nodeIcon": "material-symbols:code",
 					"nodeColor": "",
 					"titleColor": "",
 					"descColor": "",
-					"displayName": "",
+					"displayName": "Increment resend counter",
 					"hasComment": true,
-					"comment": ""
+					"comment": "",
+					"asssignedVariableName": "resendCount"
 				}
 			},
 			"measured": {
 				"width": 170,
 				"height": 123
-			}
+			},
+			"selected": true
 		},
 		{
 			"id": "logNode-275d8906-ab6b-4478-ab54-eca63ab7b278",
