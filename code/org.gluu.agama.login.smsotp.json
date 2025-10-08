@@ -322,30 +322,29 @@
 				},
 				"previousNodeId": "logNode-570ca455-bf34-4e65-a33c-501d6d828892",
 				"agamaData": {
-					"javaClassName": "",
-					"javaMethodName": "validateOTPCode",
+					"javaClassName": "org.gluu.agama.login.CounterHelper",
+					"javaMethodName": "increment",
 					"javaVariableName": "validationService",
 					"exceptionVariableField": "",
-					"callType": "Call method on instance",
+					"callType": "Call static method",
 					"arguments": [
-						"phone",
-						"otpCreds.code"
+						"validationAttempts"
 					],
 					"nodeIcon": "material-symbols:code",
 					"nodeColor": "",
 					"titleColor": "",
 					"descColor": "",
-					"displayName": "",
+					"displayName": "validationAttempts",
 					"hasComment": true,
-					"comment": " Validate the OTP code provided by the user.",
-					"asssignedVariableName": "otpValidationResult"
+					"comment": "validationAttempts",
+					"asssignedVariableName": "validationAttempts"
 				}
 			},
 			"measured": {
 				"width": 170,
 				"height": 123
 			},
-			"selected": false
+			"selected": true
 		},
 		{
 			"id": "logNode-3b3c0eeb-2dd0-4413-8641-a283b2461c63",
@@ -1919,8 +1918,8 @@
 		}
 	],
 	"viewport": {
-		"x": -1907.7441292308577,
-		"y": -334.5232561252459,
-		"zoom": 0.9100388240808991
+		"x": -1699.100595770541,
+		"y": 92.54281840225167,
+		"zoom": 1.2277356839150602
 	}
 }
