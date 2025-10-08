@@ -1293,7 +1293,7 @@
 				"width": 170,
 				"height": 123
 			},
-			"selected": true
+			"selected": false
 		},
 		{
 			"id": "logNode-6bc71085-1e6e-43f4-89c4-d36c6c198965",
@@ -1311,21 +1311,22 @@
 				},
 				"previousNodeId": "callNode-157788b1-c16f-4bda-ad85-505d0bcc521b",
 				"agamaData": {
-					"logMessage": "",
-					"logLevel": "",
+					"logMessage": "\"OTP validation result is:\" otpValidationResult",
+					"logLevel": "info",
 					"nodeIcon": "octicon:log-16",
 					"nodeColor": "",
 					"titleColor": "",
 					"descColor": "",
-					"displayName": "",
+					"displayName": "Log validation result",
 					"hasComment": true,
-					"comment": ""
+					"comment": "Add log entry withvalidation result in log file."
 				}
 			},
 			"measured": {
-				"width": 170,
-				"height": 123
-			}
+				"width": 168,
+				"height": 120
+			},
+			"selected": true
 		},
 		{
 			"id": "whenNode-08b9987d-aa2d-4244-8a38-fa6eeab6972a",
