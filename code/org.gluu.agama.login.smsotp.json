@@ -942,7 +942,7 @@
 				"width": 170,
 				"height": 123
 			},
-			"selected": true
+			"selected": false
 		},
 		{
 			"id": "logNode-275d8906-ab6b-4478-ab54-eca63ab7b278",
@@ -960,8 +960,8 @@
 				},
 				"previousNodeId": "callNode-d0ee21a8-bc38-4127-b43d-4e291a37da17",
 				"agamaData": {
-					"logMessage": "",
-					"logLevel": "",
+					"logMessage": "\"Resend attempt number: \" resendCount",
+					"logLevel": "info",
 					"nodeIcon": "octicon:log-16",
 					"nodeColor": "",
 					"titleColor": "",
@@ -972,9 +972,10 @@
 				}
 			},
 			"measured": {
-				"width": 170,
-				"height": 123
-			}
+				"width": 168,
+				"height": 120
+			},
+			"selected": true
 		},
 		{
 			"id": "callNode-e544cb36-690f-441d-9327-b7a78695cf0e",
