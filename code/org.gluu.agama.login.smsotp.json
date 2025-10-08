@@ -183,7 +183,7 @@
 				"width": 170,
 				"height": 123
 			},
-			"selected": true
+			"selected": false
 		},
 		{
 			"id": "rrfNode-e6cd3059-202d-4119-8ea0-a4b3a1c4632a",
@@ -429,7 +429,7 @@
 					"conditionInputField": "",
 					"conditions": [
 						{
-							"variable": "username",
+							"variable": "resendCount",
 							"operator": "is",
 							"dataValue": "3",
 							"combinator": "none"
@@ -448,7 +448,7 @@
 				"width": 110,
 				"height": 60
 			},
-			"selected": false,
+			"selected": true,
 			"dragging": false
 		},
 		{
@@ -792,8 +792,8 @@
 			"id": "finishNode-832a9bf7-9b6f-4b83-a060-87f9eb814189",
 			"type": "finishNode",
 			"position": {
-				"x": 2525.6517098776308,
-				"y": 927.5441422548737
+				"x": 2550.6517098776308,
+				"y": 921.5441422548737
 			},
 			"data": {
 				"id": "finishNode-832a9bf7-9b6f-4b83-a060-87f9eb814189",
@@ -820,7 +820,8 @@
 				"width": 170,
 				"height": 123
 			},
-			"selected": false
+			"selected": false,
+			"dragging": false
 		},
 		{
 			"id": "callNode-d0ee21a8-bc38-4127-b43d-4e291a37da17",
@@ -2254,8 +2255,8 @@
 		}
 	],
 	"viewport": {
-		"x": -869.7329461956047,
-		"y": 251.2102809946157,
-		"zoom": 1.0988542175768798
+		"x": -1721,
+		"y": -509,
+		"zoom": 1
 	}
 }
