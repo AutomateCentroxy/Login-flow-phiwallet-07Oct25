@@ -1966,7 +1966,7 @@
 				"width": 170,
 				"height": 123
 			},
-			"selected": true
+			"selected": false
 		},
 		{
 			"id": "whenNode-cffd41f4-c576-4c29-9c46-06a00f629e66",
@@ -1988,14 +1988,21 @@
 					"variableField": "",
 					"valueField": "",
 					"conditionInputField": "",
-					"conditions": [],
+					"conditions": [
+						{
+							"variable": "otpFeedBack.error",
+							"operator": "is",
+							"dataValue": "\"ExceededTheNumberOfAttemptsAllowed\"",
+							"combinator": "none"
+						}
+					],
 					"nodeIcon": "ph:swap",
 					"nodeColor": "",
 					"titleColor": "",
 					"descColor": "",
 					"displayName": "",
 					"hasComment": true,
-					"comment": ""
+					"comment": "Check if OTP attempts exceeded"
 				}
 			},
 			"measured": {
@@ -2022,13 +2029,13 @@
 				"previousNodeId": "whenNode-cffd41f4-c576-4c29-9c46-06a00f629e66",
 				"branching": "success",
 				"agamaData": {
-					"logMessage": "",
-					"logLevel": "",
+					"logMessage": "\"OTP validation attempts exceeded\"",
+					"logLevel": "info",
 					"nodeIcon": "octicon:log-16",
 					"nodeColor": "",
 					"titleColor": "",
 					"descColor": "",
-					"displayName": "",
+					"displayName": "Log OTP exceeded",
 					"hasComment": true,
 					"comment": ""
 				}
@@ -2063,14 +2070,16 @@
 					"hasComment": true,
 					"comment": "",
 					"flowfilename": "",
-					"returnVariable": "",
+					"returnVariable": "otpFeedBack",
+					"finishMode": "withVariable",
 					"nodeIcon": "material-symbols:line-end-square-rounded"
 				}
 			},
 			"measured": {
 				"width": 170,
 				"height": 123
-			}
+			},
+			"selected": true
 		},
 		{
 			"id": "assignmentNode-e98e7752-52f9-464a-946b-63103733b46c",
@@ -3163,8 +3172,8 @@
 		}
 	],
 	"viewport": {
-		"x": -4222.209491181014,
-		"y": -601.2264643036767,
+		"x": -4290.209491181014,
+		"y": -549.2264643036767,
 		"zoom": 0.860949188338904
 	}
 }
