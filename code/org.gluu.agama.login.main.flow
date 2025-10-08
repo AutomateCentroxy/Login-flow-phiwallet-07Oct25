@@ -76,6 +76,7 @@ Repeat 6 times max
                                    When otpFeedBack.error is "ExceededTheNumberOfAttemptsAllowed"
                                         Log "@info OTP validation attempts exceeded"
                                         Finish otpFeedBack
+                                   uiFeedback.errorMessage = "Please try again with a different mobile number."
                          Otherwise
                               // "This phone is already used by another account. Please enter a different one.
                               Log "@info This phone is already used by another account. Please enter a different one."
@@ -98,5 +99,5 @@ Repeat 6 times max
 // The login flow will end here with failure.
 Log "@info The maximum login attempt has been reached!"
 // Maximum attempts reached. Password validation failed!
-it_fczoz = {success:false, error: "Password validation failed!"}
-Finish it_fczoz
+it_emuwk = {success:false, error: "Password validation failed!"}
+Finish it_emuwk
