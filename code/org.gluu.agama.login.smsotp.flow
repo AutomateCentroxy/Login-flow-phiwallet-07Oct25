@@ -13,8 +13,8 @@ maxSMS = Repeat 4 times max
      //  Show UI to collect OTP code from user.
      otpCreds = RRF "smsOtp.ftlh" otpUiFeedback
      When otpCreds.changenumber is "yes"
-          it_htfec = {success:false, error: "Your error message here"}
-          Finish it_htfec
+          it_veprp = {success:false, error: "Your error message here"}
+          Finish it_veprp
      Otherwise
           When otpCreds.hasRequestedNewCode is "yes"
                // Log new code request
@@ -27,7 +27,8 @@ maxSMS = Repeat 4 times max
                     Finish it_resend
                resendCount = Call org.gluu.agama.login.CounterHelper#increment resendCount
                Log "@info Resend attempt number: " resendCount
-               Call __________#__________ 
+               // Resend otp
+               resendHasSucceed = Call validationService sendOTPCode username phone
                When 
                     Log "@ " __________
                Log "@ " __________
