@@ -551,9 +551,9 @@
 					"conditionInputField": "",
 					"conditions": [
 						{
-							"variable": "otpValidationResult",
+							"variable": "validationAttempts",
 							"operator": "is",
-							"dataValue": "true",
+							"dataValue": "4",
 							"combinator": "none"
 						}
 					],
@@ -563,92 +563,15 @@
 					"descColor": "",
 					"displayName": "",
 					"hasComment": true,
-					"comment": "If otp validation was successful"
+					"comment": "Check validation"
 				}
 			},
 			"measured": {
 				"width": 110,
 				"height": 60
 			},
-			"selected": false,
+			"selected": true,
 			"dragging": false
-		},
-		{
-			"id": "logNode-c9ce28c5-6972-4d13-8bc3-3f15e3203d07",
-			"type": "logNode",
-			"position": {
-				"x": 2521,
-				"y": -7
-			},
-			"data": {
-				"id": "logNode-c9ce28c5-6972-4d13-8bc3-3f15e3203d07",
-				"type": "logNode",
-				"position": {
-					"x": 2521,
-					"y": -7
-				},
-				"previousNodeId": "whenNode-b2d95e94-c799-4c23-97aa-0e8c2beb47a7",
-				"branching": "otherwise",
-				"agamaData": {
-					"logMessage": "\"Invalid code provided \"",
-					"logLevel": "info",
-					"nodeIcon": "octicon:log-16",
-					"nodeColor": "",
-					"titleColor": "",
-					"descColor": "",
-					"displayName": "Log invalid code",
-					"hasComment": true,
-					"comment": "The maximum number of attempt has been reached."
-				}
-			},
-			"measured": {
-				"width": 170,
-				"height": 123
-			},
-			"selected": false
-		},
-		{
-			"id": "assignmentNode-1e44d439-192f-4799-951c-98005a0d2c09",
-			"type": "assignmentNode",
-			"position": {
-				"x": 2771,
-				"y": -7
-			},
-			"data": {
-				"id": "assignmentNode-1e44d439-192f-4799-951c-98005a0d2c09",
-				"type": "assignmentNode",
-				"position": {
-					"x": 2771,
-					"y": -7
-				},
-				"previousNodeId": "logNode-c9ce28c5-6972-4d13-8bc3-3f15e3203d07",
-				"agamaData": {
-					"assignments": [
-						{
-							"variableTypeCheck": true,
-							"assignmentExpression": "\"Invalid code provided.\"",
-							"assignedVariableName": "otpUiFeedback.errorMessage"
-						},
-						{
-							"variableTypeCheck": true,
-							"assignmentExpression": "\"\"",
-							"assignedVariableName": "otpUiFeedback.infoMessage"
-						}
-					],
-					"nodeIcon": "material-symbols:equal",
-					"nodeColor": "",
-					"titleColor": "",
-					"descColor": "",
-					"displayName": "Provide feedback",
-					"hasComment": true,
-					"comment": "Provide feedback to user."
-				}
-			},
-			"measured": {
-				"width": 170,
-				"height": 123
-			},
-			"selected": false
 		},
 		{
 			"id": "logNode-f389aa7e-9b9a-4282-9528-90861ef71558",
@@ -717,7 +640,7 @@
 				"width": 170,
 				"height": 123
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false
 		},
 		{
@@ -1561,44 +1484,6 @@
 			"sourceHandle": "source_logNode-3b3c0eeb-2dd0-4413-8641-a283b2461c63"
 		},
 		{
-			"id": "whenNode-b2d95e94-c799-4c23-97aa-0e8c2beb47a7-logNode-c9ce28c5-6972-4d13-8bc3-3f15e3203d07",
-			"type": "default",
-			"source": "whenNode-b2d95e94-c799-4c23-97aa-0e8c2beb47a7",
-			"target": "logNode-c9ce28c5-6972-4d13-8bc3-3f15e3203d07",
-			"labelBgPadding": [
-				8,
-				4
-			],
-			"labelBgBorderRadius": 4,
-			"label": "otherwise",
-			"labelBgStyle": {
-				"fill": "#009688",
-				"color": "#ffffff",
-				"fillOpacity": 0.7
-			},
-			"labelShowBg": true,
-			"sourceHandle": "source_whenNode-b2d95e94-c799-4c23-97aa-0e8c2beb47a7_otherwise"
-		},
-		{
-			"id": "logNode-c9ce28c5-6972-4d13-8bc3-3f15e3203d07-assignmentNode-1e44d439-192f-4799-951c-98005a0d2c09",
-			"type": "default",
-			"source": "logNode-c9ce28c5-6972-4d13-8bc3-3f15e3203d07",
-			"target": "assignmentNode-1e44d439-192f-4799-951c-98005a0d2c09",
-			"labelBgPadding": [
-				8,
-				4
-			],
-			"labelBgBorderRadius": 4,
-			"label": "",
-			"labelBgStyle": {
-				"fill": "#009688",
-				"color": "#ffffff",
-				"fillOpacity": 0.7
-			},
-			"labelShowBg": true,
-			"sourceHandle": "source_logNode-c9ce28c5-6972-4d13-8bc3-3f15e3203d07"
-		},
-		{
 			"id": "whenNode-b2d95e94-c799-4c23-97aa-0e8c2beb47a7-logNode-f389aa7e-9b9a-4282-9528-90861ef71558",
 			"type": "default",
 			"source": "whenNode-b2d95e94-c799-4c23-97aa-0e8c2beb47a7",
@@ -1978,8 +1863,8 @@
 		}
 	],
 	"viewport": {
-		"x": -2658.100595770541,
-		"y": -33.4571815977485,
+		"x": -2704.100595770541,
+		"y": 231.5428184022515,
 		"zoom": 1.2277356839150602
 	}
 }
