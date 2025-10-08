@@ -116,7 +116,7 @@
 				"width": 170,
 				"height": 123
 			},
-			"selected": true
+			"selected": false
 		},
 		{
 			"id": "repeatNode-e777fc61-61cf-4ad5-80fe-ebc0f6f2dd0c",
@@ -168,7 +168,7 @@
 				"previousNodeId": "repeatNode-e777fc61-61cf-4ad5-80fe-ebc0f6f2dd0c",
 				"branching": "continue",
 				"agamaData": {
-					"logMessage": "\"Maximum attempts reached. OTP validation failed!\"",
+					"logMessage": "\"OTP verification loop completed\"",
 					"logLevel": "info",
 					"nodeIcon": "octicon:log-16",
 					"nodeColor": "",
@@ -183,7 +183,7 @@
 				"width": 170,
 				"height": 123
 			},
-			"selected": false
+			"selected": true
 		},
 		{
 			"id": "rrfNode-e6cd3059-202d-4119-8ea0-a4b3a1c4632a",
@@ -2254,8 +2254,8 @@
 		}
 	],
 	"viewport": {
-		"x": -2.869034814690167,
-		"y": 95.10758557777007,
-		"zoom": 0.860949188338904
+		"x": -869.7329461956047,
+		"y": 251.2102809946157,
+		"zoom": 1.0988542175768798
 	}
 }
