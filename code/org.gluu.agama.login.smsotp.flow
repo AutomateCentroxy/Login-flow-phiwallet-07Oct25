@@ -13,8 +13,8 @@ maxSMS = Repeat 4 times max
      //  Show UI to collect OTP code from user.
      otpCreds = RRF "smsOtp.ftlh" otpUiFeedback
      When otpCreds.changenumber is "yes"
-          it_aackl = {success:false, error: "Your error message here"}
-          Finish it_aackl
+          it_pmjpu = {success:false, error: "Your error message here"}
+          Finish it_pmjpu
      Otherwise
           When otpCreds.hasRequestedNewCode is "yes"
                // Log new code request
@@ -25,7 +25,7 @@ maxSMS = Repeat 4 times max
                     // ExceededResendAttempts
                     it_resend = {success: false, error: "ExceededResendAttempts"}
                     Finish it_resend
-               Call __________#__________ 
+               resendCount = Call org.gluu.agama.login.CounterHelper#increment resendCount
                Log "@ " __________
                Call __________#__________ 
                When 
