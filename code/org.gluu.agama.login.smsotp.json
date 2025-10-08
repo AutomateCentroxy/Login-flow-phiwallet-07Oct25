@@ -667,15 +667,15 @@
 				"previousNodeId": "whenNode-b2d95e94-c799-4c23-97aa-0e8c2beb47a7",
 				"branching": "success",
 				"agamaData": {
-					"logMessage": "\"OTP validated Successfully\"",
+					"logMessage": "\"Maximum validation attempts exceeded\"",
 					"logLevel": "info",
 					"nodeIcon": "octicon:log-16",
 					"nodeColor": "",
 					"titleColor": "",
 					"descColor": "",
-					"displayName": "OTP validated Successfully",
+					"displayName": "Log validation exceeded",
 					"hasComment": true,
-					"comment": ""
+					"comment": "Log validation exceeded"
 				}
 			},
 			"measured": {
@@ -717,7 +717,7 @@
 				"width": 170,
 				"height": 123
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false
 		},
 		{
@@ -1269,12 +1269,18 @@
 				},
 				"previousNodeId": "logNode-f389aa7e-9b9a-4282-9528-90861ef71558",
 				"agamaData": {
-					"assignments": [],
+					"assignments": [
+						{
+							"variableTypeCheck": true,
+							"assignmentExpression": "{ success: false, error: \"ExceededTheNumberOfAttemptsAllowed\" }",
+							"assignedVariableName": "it_otpmax"
+						}
+					],
 					"nodeIcon": "material-symbols:equal",
 					"nodeColor": "",
 					"titleColor": "",
 					"descColor": "",
-					"displayName": "",
+					"displayName": "Set validation error",
 					"hasComment": true,
 					"comment": ""
 				}
@@ -1283,7 +1289,7 @@
 				"width": 170,
 				"height": 123
 			},
-			"selected": false,
+			"selected": true,
 			"dragging": false
 		},
 		{
