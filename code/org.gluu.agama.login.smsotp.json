@@ -704,11 +704,11 @@
 					"nodeColor": "",
 					"titleColor": "",
 					"descColor": "",
-					"displayName": "OTP code is valid",
+					"displayName": "End validation exceeded",
 					"hasComment": true,
-					"comment": "OTP flow completed successfully.",
+					"comment": "End validation exceeded",
 					"flowfilename": "",
-					"returnVariable": "otpValidationResult",
+					"returnVariable": "it_otpmax",
 					"finishMode": "withVariable",
 					"nodeIcon": "material-symbols:line-end-square-rounded"
 				}
@@ -717,7 +717,7 @@
 				"width": 170,
 				"height": 123
 			},
-			"selected": false,
+			"selected": true,
 			"dragging": false
 		},
 		{
@@ -1289,7 +1289,7 @@
 				"width": 170,
 				"height": 123
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false
 		},
 		{
