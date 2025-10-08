@@ -13,8 +13,8 @@ maxSMS = Repeat 4 times max
      //  Show UI to collect OTP code from user.
      otpCreds = RRF "smsOtp.ftlh" otpUiFeedback
      When otpCreds.changenumber is "yes"
-          it_veprp = {success:false, error: "Your error message here"}
-          Finish it_veprp
+          it_gohzg = {success:false, error: "Your error message here"}
+          Finish it_gohzg
      Otherwise
           When otpCreds.hasRequestedNewCode is "yes"
                // Log new code request
@@ -29,9 +29,13 @@ maxSMS = Repeat 4 times max
                Log "@info Resend attempt number: " resendCount
                // Resend otp
                resendHasSucceed = Call validationService sendOTPCode username phone
-               When 
+               When resendHasSucceed is null
                     Log "@ " __________
-               Log "@ " __________
+               // New OTP code send successfully!
+               Log "@info New OTP code send successfully!" resendHasSucceed
+               // "A new OTP code has been send to you on your mobile phone."
+               otpUiFeedback.infoMessage = "An OTP code has been send to your register mobile number."
+               otpUiFeedback.errorMessage = ""
           Otherwise
                //  Add log entry with collected code in log file.
                Log "@info Information provided by the user is : " otpCreds.code
