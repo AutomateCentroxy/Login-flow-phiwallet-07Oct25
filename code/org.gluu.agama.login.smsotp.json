@@ -937,8 +937,8 @@
 					"assignments": [
 						{
 							"variableTypeCheck": true,
-							"assignmentExpression": "{ success: false, error: \"ExceededTheNumberOfAttemptsAllowed\" }",
-							"assignedVariableName": "it_otpmax"
+							"assignmentExpression": "{ success: false, error: \"UnexpectedLoopCompletion\" }",
+							"assignedVariableName": "it_loopmax"
 						}
 					],
 					"nodeIcon": "material-symbols:equal",
@@ -975,11 +975,11 @@
 					"nodeColor": "",
 					"titleColor": "",
 					"descColor": "",
-					"displayName": "",
+					"displayName": "End unexpected completion",
 					"hasComment": true,
-					"comment": "",
+					"comment": "SMS OTP error",
 					"flowfilename": "",
-					"returnVariable": "it_otpmax",
+					"returnVariable": "it_loopmax",
 					"finishMode": "withVariable",
 					"nodeIcon": "material-symbols:line-end-square-rounded"
 				}
@@ -1468,8 +1468,8 @@
 		}
 	],
 	"viewport": {
-		"x": -576.6320146757228,
-		"y": 95.79735606639355,
-		"zoom": 0.860949188338904
+		"x": -689,
+		"y": 128,
+		"zoom": 1
 	}
 }
