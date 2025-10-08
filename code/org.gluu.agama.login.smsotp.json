@@ -1368,7 +1368,7 @@
 				"width": 110,
 				"height": 60
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false
 		},
 		{
@@ -1388,21 +1388,22 @@
 				"previousNodeId": "whenNode-08b9987d-aa2d-4244-8a38-fa6eeab6972a",
 				"branching": "otherwise",
 				"agamaData": {
-					"logMessage": "",
-					"logLevel": "",
+					"logMessage": "\"Invalid code provided \"",
+					"logLevel": "info",
 					"nodeIcon": "octicon:log-16",
 					"nodeColor": "",
 					"titleColor": "",
 					"descColor": "",
-					"displayName": "",
+					"displayName": "Log invalid code",
 					"hasComment": true,
-					"comment": ""
+					"comment": "The maximum number of attempt has been reached."
 				}
 			},
 			"measured": {
 				"width": 170,
 				"height": 123
-			}
+			},
+			"selected": false
 		},
 		{
 			"id": "assignmentNode-b841182f-23b6-4ebe-bbc2-616c8da5aef5",
@@ -1420,20 +1421,32 @@
 				},
 				"previousNodeId": "logNode-b207e862-bc1e-429c-b07a-05b08682ccb7",
 				"agamaData": {
-					"assignments": [],
+					"assignments": [
+						{
+							"variableTypeCheck": true,
+							"assignmentExpression": "\"Invalid code provided.\"",
+							"assignedVariableName": "otpUiFeedback.errorMessage"
+						},
+						{
+							"variableTypeCheck": true,
+							"assignmentExpression": "\"\"",
+							"assignedVariableName": "otpUiFeedback.infoMessage"
+						}
+					],
 					"nodeIcon": "material-symbols:equal",
 					"nodeColor": "",
 					"titleColor": "",
 					"descColor": "",
-					"displayName": "",
+					"displayName": "Provide feedback",
 					"hasComment": true,
-					"comment": ""
+					"comment": "Provide feedback to user."
 				}
 			},
 			"measured": {
 				"width": 170,
 				"height": 123
-			}
+			},
+			"selected": false
 		},
 		{
 			"id": "logNode-0d6c652b-cdb7-43c1-a739-858bc32188ef",
@@ -1452,21 +1465,22 @@
 				"previousNodeId": "whenNode-08b9987d-aa2d-4244-8a38-fa6eeab6972a",
 				"branching": "success",
 				"agamaData": {
-					"logMessage": "",
-					"logLevel": "",
+					"logMessage": "\"OTP validated Successfully\"",
+					"logLevel": "info",
 					"nodeIcon": "octicon:log-16",
 					"nodeColor": "",
 					"titleColor": "",
 					"descColor": "",
-					"displayName": "",
+					"displayName": "OTP validated Successfully",
 					"hasComment": true,
 					"comment": ""
 				}
 			},
 			"measured": {
-				"width": 170,
-				"height": 123
-			}
+				"width": 168,
+				"height": 120
+			},
+			"selected": false
 		},
 		{
 			"id": "finishNode-6d02b2a1-9e85-4cbc-8136-6ee4256b2fb0",
@@ -1491,14 +1505,16 @@
 					"hasComment": true,
 					"comment": "",
 					"flowfilename": "",
-					"returnVariable": "",
+					"returnVariable": "otpValidationResult",
+					"finishMode": "withVariable",
 					"nodeIcon": "material-symbols:line-end-square-rounded"
 				}
 			},
 			"measured": {
 				"width": 170,
 				"height": 123
-			}
+			},
+			"selected": true
 		}
 	],
 	"edges": [
@@ -2243,8 +2259,8 @@
 		}
 	],
 	"viewport": {
-		"x": -2198.0729373585327,
-		"y": 329.1234647046185,
-		"zoom": 1.0570180405613803
+		"x": -2047.1838424794446,
+		"y": 380.86142079156934,
+		"zoom": 0.9100388240808991
 	}
 }
