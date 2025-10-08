@@ -72,9 +72,10 @@ Repeat 6 times max
                                    When otpFeedBack.error is "ExceededResendAttempts"
                                         Log "@info Resend attempts exceeded in OTP flow"
                                         Finish otpFeedBack
-                                   When 
-                                        Log "@ " __________
-                                        Finish __________
+                                   // Check if OTP attempts exceeded
+                                   When otpFeedBack.error is "ExceededTheNumberOfAttemptsAllowed"
+                                        Log "@info OTP validation attempts exceeded"
+                                        Finish otpFeedBack
                          Otherwise
                               // "This phone is already used by another account. Please enter a different one.
                               Log "@info This phone is already used by another account. Please enter a different one."
@@ -97,5 +98,5 @@ Repeat 6 times max
 // The login flow will end here with failure.
 Log "@info The maximum login attempt has been reached!"
 // Maximum attempts reached. Password validation failed!
-it_zvzap = {success:false, error: "Password validation failed!"}
-Finish it_zvzap
+it_fczoz = {success:false, error: "Password validation failed!"}
+Finish it_fczoz
