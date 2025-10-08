@@ -13,13 +13,13 @@ maxSMS = Repeat 4 times max
      //  Show UI to collect OTP code from user.
      otpCreds = RRF "smsOtp.ftlh" otpUiFeedback
      When otpCreds.changenumber is "yes"
-          it_bifuh = {success:false, error: "Your error message here"}
-          Finish it_bifuh
+          it_aackl = {success:false, error: "Your error message here"}
+          Finish it_aackl
      Otherwise
           When otpCreds.hasRequestedNewCode is "yes"
                // Log new code request
                Log "@info User has requested a new code."
-               When resendHasSucceed is null
+               When username is 3
                     // "Maximum resend attempts exceeded"
                     Log "@info Maximum resend attempts exceeded"
                     // ExceededResendAttempts
