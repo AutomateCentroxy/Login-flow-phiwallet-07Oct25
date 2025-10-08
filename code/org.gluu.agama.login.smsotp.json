@@ -435,9 +435,9 @@
 					"conditionInputField": "",
 					"conditions": [
 						{
-							"variable": "resendHasSucceed",
+							"variable": "username",
 							"operator": "is",
-							"dataValue": "null",
+							"dataValue": "3",
 							"combinator": "none"
 						}
 					],
@@ -454,7 +454,7 @@
 				"width": 110,
 				"height": 60
 			},
-			"selected": false,
+			"selected": true,
 			"dragging": false
 		},
 		{
@@ -1661,8 +1661,8 @@
 		}
 	],
 	"viewport": {
-		"x": -1080.32618467758,
-		"y": -69.91710651911768,
-		"zoom": 0.6745512671698494
+		"x": -1027.6403499688936,
+		"y": -133.07007990052875,
+		"zoom": 0.7834971869493407
 	}
 }
