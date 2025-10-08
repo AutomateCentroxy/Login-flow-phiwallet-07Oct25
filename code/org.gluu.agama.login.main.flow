@@ -68,7 +68,13 @@ Repeat 6 times max
                                    // Password Vealidation completed successfully!
                                    Finish credentials.username
                               Otherwise
-                                   uiFeedback.errorMessage = "Please try again with a different mobile number."
+                                   // "ExceededResendAttempts"
+                                   When otpFeedBack.error is "ExceededResendAttempts"
+                                        Log "@ " __________
+                                        Finish __________
+                                   When 
+                                        Log "@ " __________
+                                        Finish __________
                          Otherwise
                               // "This phone is already used by another account. Please enter a different one.
                               Log "@info This phone is already used by another account. Please enter a different one."
@@ -91,5 +97,5 @@ Repeat 6 times max
 // The login flow will end here with failure.
 Log "@info The maximum login attempt has been reached!"
 // Maximum attempts reached. Password validation failed!
-it_xxdvt = {success:false, error: "Password validation failed!"}
-Finish it_xxdvt
+it_ydzql = {success:false, error: "Password validation failed!"}
+Finish it_ydzql
