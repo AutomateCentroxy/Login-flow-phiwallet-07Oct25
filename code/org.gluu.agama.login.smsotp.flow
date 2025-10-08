@@ -13,8 +13,8 @@ maxSMS = Repeat 4 times max
      //  Show UI to collect OTP code from user.
      otpCreds = RRF "smsOtp.ftlh" otpUiFeedback
      When otpCreds.changenumber is "yes"
-          it_tbwmo = {success:false, error: "Your error message here"}
-          Finish it_tbwmo
+          it_bwiaw = {success:false, error: "Your error message here"}
+          Finish it_bwiaw
      Otherwise
           When otpCreds.hasRequestedNewCode is "yes"
                // Log new code request
@@ -48,7 +48,7 @@ maxSMS = Repeat 4 times max
                // validationAttempts
                validationAttempts = Call org.gluu.agama.login.CounterHelper#increment validationAttempts
                // Add log entry withvalidation result in log file.
-               Log "@info OTP validation result is:" otpValidationResult
+               Log "@info Validation attempt number: " validationAttempts
                // If otp validation was successful
                When otpValidationResult is true
                     Log "@info OTP validated Successfully"
