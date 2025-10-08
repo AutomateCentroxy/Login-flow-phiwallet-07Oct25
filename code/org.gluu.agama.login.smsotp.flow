@@ -13,8 +13,8 @@ maxSMS = Repeat 4 times max
      //  Show UI to collect OTP code from user.
      otpCreds = RRF "smsOtp.ftlh" otpUiFeedback
      When otpCreds.changenumber is "yes"
-          it_maxpk = {success:false, error: "Your error message here"}
-          Finish it_maxpk
+          it_puvgx = {success:false, error: "Your error message here"}
+          Finish it_puvgx
      Otherwise
           When otpCreds.hasRequestedNewCode is "yes"
                // Log new code request
@@ -54,8 +54,8 @@ maxSMS = Repeat 4 times max
                     // Log validation exceeded
                     Log "@info Maximum validation attempts exceeded"
                     it_otpmax = { success: false, error: "ExceededTheNumberOfAttemptsAllowed" }
-                    // OTP flow completed successfully.
-                    Finish otpValidationResult
+                    // End validation exceeded
+                    Finish it_otpmax
                Otherwise
                     // The maximum number of attempt has been reached.
                     Log "@info Invalid code provided "
