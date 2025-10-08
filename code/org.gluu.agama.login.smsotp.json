@@ -1077,21 +1077,22 @@
 				"previousNodeId": "whenNode-e0e3322a-4514-4591-98a0-c17013e4cc1d",
 				"branching": "success",
 				"agamaData": {
-					"logMessage": "",
-					"logLevel": "",
+					"logMessage": "\"Fail to resend new code to user. \" resendHasSucceed",
+					"logLevel": "info",
 					"nodeIcon": "octicon:log-16",
 					"nodeColor": "",
 					"titleColor": "",
 					"descColor": "",
-					"displayName": "",
+					"displayName": "Log error code",
 					"hasComment": true,
-					"comment": ""
+					"comment": "Fail to resend new code to user."
 				}
 			},
 			"measured": {
 				"width": 168,
 				"height": 120
-			}
+			},
+			"selected": false
 		},
 		{
 			"id": "logNode-bf6431d5-0899-4239-9af1-a86ff93d6de2",
@@ -1206,7 +1207,7 @@
 				"width": 170,
 				"height": 123
 			},
-			"selected": true
+			"selected": false
 		},
 		{
 			"id": "assignmentNode-756a17bd-6fd6-49c0-8855-6f110cd9aba8",
@@ -1224,20 +1225,32 @@
 				},
 				"previousNodeId": "logNode-17d58fc0-98b2-4fba-94b3-1a963de46168",
 				"agamaData": {
-					"assignments": [],
+					"assignments": [
+						{
+							"variableTypeCheck": true,
+							"assignmentExpression": "\"Error occurs while sending new code to you. Please contact site administrator.\"",
+							"assignedVariableName": "otpUiFeedback.errorMessage"
+						},
+						{
+							"variableTypeCheck": true,
+							"assignmentExpression": "\"\"",
+							"assignedVariableName": "otpUiFeedback.infoMessage"
+						}
+					],
 					"nodeIcon": "material-symbols:equal",
 					"nodeColor": "",
 					"titleColor": "",
 					"descColor": "",
 					"displayName": "",
 					"hasComment": true,
-					"comment": ""
+					"comment": "\"Error occurs while sending new code to you. Please contact site administrator.\""
 				}
 			},
 			"measured": {
 				"width": 170,
 				"height": 123
-			}
+			},
+			"selected": true
 		},
 		{
 			"id": "assignmentNode-e4117ce1-85c7-4d91-8699-29cf4b9ed00c",
