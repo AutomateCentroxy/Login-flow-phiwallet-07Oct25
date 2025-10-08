@@ -13,8 +13,8 @@ maxSMS = Repeat 4 times max
      //  Show UI to collect OTP code from user.
      otpCreds = RRF "smsOtp.ftlh" otpUiFeedback
      When otpCreds.changenumber is "yes"
-          it_csyux = {success:false, error: "Your error message here"}
-          Finish it_csyux
+          it_yzheg = {success:false, error: "Your error message here"}
+          Finish it_yzheg
      Otherwise
           When otpCreds.hasRequestedNewCode is "yes"
                // Log new code request
