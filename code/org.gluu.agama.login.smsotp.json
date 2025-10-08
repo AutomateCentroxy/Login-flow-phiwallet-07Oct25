@@ -89,23 +89,18 @@
 					"assignments": [
 						{
 							"variableTypeCheck": true,
-							"assignmentExpression": "false",
-							"assignedVariableName": "otpValidationResult"
-						},
-						{
-							"variableTypeCheck": true,
 							"assignmentExpression": "{}",
 							"assignedVariableName": "otpUiFeedback"
 						},
 						{
 							"variableTypeCheck": true,
-							"assignmentExpression": "\"\"",
-							"assignedVariableName": "otpUiFeedback.errorMessage"
+							"assignmentExpression": "0",
+							"assignedVariableName": "resendCount"
 						},
 						{
 							"variableTypeCheck": true,
-							"assignmentExpression": "\"An OTP code has been send to your register mobile number.\"",
-							"assignedVariableName": "otpUiFeedback.infoMessage"
+							"assignmentExpression": "0",
+							"assignedVariableName": "validationAttempts"
 						}
 					],
 					"nodeIcon": "material-symbols:equal",
@@ -121,7 +116,7 @@
 				"width": 170,
 				"height": 123
 			},
-			"selected": false
+			"selected": true
 		},
 		{
 			"id": "repeatNode-e777fc61-61cf-4ad5-80fe-ebc0f6f2dd0c",
@@ -154,7 +149,7 @@
 				"width": 170,
 				"height": 123
 			},
-			"selected": true
+			"selected": false
 		},
 		{
 			"id": "logNode-631ae1e8-5ced-44b4-9aa2-b378e791b389",
@@ -896,8 +891,8 @@
 				}
 			},
 			"measured": {
-				"width": 168,
-				"height": 120
+				"width": 170,
+				"height": 123
 			},
 			"selected": false
 		},
@@ -1013,8 +1008,8 @@
 				}
 			},
 			"measured": {
-				"width": 168,
-				"height": 120
+				"width": 170,
+				"height": 123
 			},
 			"selected": false
 		},
@@ -1323,8 +1318,8 @@
 				}
 			},
 			"measured": {
-				"width": 168,
-				"height": 120
+				"width": 170,
+				"height": 123
 			},
 			"selected": false
 		},
@@ -1477,8 +1472,8 @@
 				}
 			},
 			"measured": {
-				"width": 168,
-				"height": 120
+				"width": 170,
+				"height": 123
 			},
 			"selected": false
 		},
@@ -2259,8 +2254,8 @@
 		}
 	],
 	"viewport": {
-		"x": -150.11795342839332,
-		"y": 41.50901778735965,
-		"zoom": 0.580754365962861
+		"x": 93.15310849586365,
+		"y": 85.02201714278198,
+		"zoom": 0.860949188338904
 	}
 }
