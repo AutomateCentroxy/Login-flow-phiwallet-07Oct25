@@ -85,7 +85,7 @@ Repeat 6 times max
                               max = Repeat 4 times max
                                    otpCred = RRF "smsOtp.ftlh" uiFeedback
                                    otpValidationResults = Call validationService validateOTPCode phone otpCred.code
-                                   When 
+                                   When otpValidationResults is true
                                    Otherwise
                               it_ootpmax = { success: false, error: "ExceededTheNumberOfAttemptsAllowed" }
                               Finish it_ootpmax
@@ -106,5 +106,5 @@ Repeat 6 times max
 // The login flow will end here with failure.
 Log "@info The maximum login attempt has been reached!"
 // Maximum attempts reached. Password validation failed!
-it_leera = {success:false, error: "Password validation failed!"}
-Finish it_leera
+it_llmaa = {success:false, error: "Password validation failed!"}
+Finish it_llmaa
