@@ -2143,12 +2143,12 @@
 				"previousNodeId": "assignmentNode-dc476cd4-faf5-4c3a-816d-82d2dbefc682",
 				"agamaData": {
 					"nodeIcon": "material-symbols:event-repeat-outline-rounded",
-					"maxIteration": "",
-					"maxIterationVariableName": "",
+					"maxIteration": "4",
+					"maxIterationVariableName": "max",
 					"nodeColor": "",
 					"titleColor": "",
 					"descColor": "",
-					"displayName": "",
+					"displayName": "max",
 					"hasComment": true,
 					"comment": ""
 				}
@@ -2156,7 +2156,8 @@
 			"measured": {
 				"width": 170,
 				"height": 122
-			}
+			},
+			"selected": false
 		},
 		{
 			"id": "assignmentNode-05ee3704-92d3-4e78-acc5-12980ac1ca6d",
@@ -2175,12 +2176,18 @@
 				"previousNodeId": "repeatNode-b5ea4ef3-a0d4-4491-aaa7-83892048e9cd",
 				"branching": "continue",
 				"agamaData": {
-					"assignments": [],
+					"assignments": [
+						{
+							"variableTypeCheck": true,
+							"assignmentExpression": "{ success: false, error: \"ExceededTheNumberOfAttemptsAllowed\" }",
+							"assignedVariableName": "it_ootpmax"
+						}
+					],
 					"nodeIcon": "material-symbols:equal",
 					"nodeColor": "",
 					"titleColor": "",
 					"descColor": "",
-					"displayName": "",
+					"displayName": "Set validation error",
 					"hasComment": true,
 					"comment": ""
 				}
@@ -2188,7 +2195,8 @@
 			"measured": {
 				"width": 170,
 				"height": 122
-			}
+			},
+			"selected": false
 		},
 		{
 			"id": "finishNode-18398e41-dd47-4670-9567-b2ff94eadabf",
@@ -2213,14 +2221,16 @@
 					"hasComment": true,
 					"comment": "",
 					"flowfilename": "",
-					"returnVariable": "",
+					"returnVariable": "it_ootpmax",
+					"finishMode": "withVariable",
 					"nodeIcon": "material-symbols:line-end-square-rounded"
 				}
 			},
 			"measured": {
 				"width": 170,
 				"height": 122
-			}
+			},
+			"selected": false
 		},
 		{
 			"id": "rrfNode-a61c92fb-d023-4309-ac33-a30c2452735b",
@@ -2241,14 +2251,15 @@
 				"agamaData": {
 					"assignments": [],
 					"nodeIcon": "ph:globe-simple",
-					"templatePath": "",
-					"asssignedVariableName": "",
+					"templatePath": "smsOtp.ftlh",
+					"asssignedVariableName": "otpCred",
 					"nodeColor": "",
 					"titleColor": "",
 					"descColor": "",
-					"displayName": "",
+					"displayName": "sms OTP page",
 					"hasComment": true,
-					"comment": ""
+					"comment": "",
+					"arguments": "uiFeedback"
 				}
 			},
 			"measured": {
@@ -2275,25 +2286,29 @@
 				"previousNodeId": "rrfNode-a61c92fb-d023-4309-ac33-a30c2452735b",
 				"agamaData": {
 					"javaClassName": "",
-					"javaMethodName": "",
-					"javaVariableName": "",
+					"javaMethodName": "validateOTPCode",
+					"javaVariableName": "validationService",
 					"exceptionVariableField": "",
-					"callType": "Call static method",
-					"arguments": [],
+					"callType": "Call method on instance",
+					"arguments": [
+						"phone",
+						"otpCred.code"
+					],
 					"nodeIcon": "material-symbols:code",
 					"nodeColor": "",
 					"titleColor": "",
 					"descColor": "",
-					"displayName": "",
+					"displayName": "otpValidationResults",
 					"hasComment": true,
-					"comment": ""
+					"comment": "",
+					"asssignedVariableName": "otpValidationResults"
 				}
 			},
 			"measured": {
 				"width": 170,
 				"height": 122
 			},
-			"selected": false,
+			"selected": true,
 			"dragging": false
 		},
 		{
