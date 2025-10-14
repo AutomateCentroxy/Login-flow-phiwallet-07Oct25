@@ -86,7 +86,9 @@ Repeat 6 times max
                                    otpCred = RRF "smsOtp.ftlh" uiFeedback
                                    otpValidationResults = Call validationService validateOTPCode phone otpCred.code
                                    When otpValidationResults is true
+                                        uiFeedback.infoMessage = "Invalid code provided."
                                    Otherwise
+                                        uiFeedback.errorMessage = "Invalid code provided."
                               it_ootpmax = { success: false, error: "ExceededTheNumberOfAttemptsAllowed" }
                               Finish it_ootpmax
                     Log "@info Phone loop completed"
@@ -106,5 +108,5 @@ Repeat 6 times max
 // The login flow will end here with failure.
 Log "@info The maximum login attempt has been reached!"
 // Maximum attempts reached. Password validation failed!
-it_llmaa = {success:false, error: "Password validation failed!"}
-Finish it_llmaa
+it_iafgr = {success:false, error: "Password validation failed!"}
+Finish it_iafgr
