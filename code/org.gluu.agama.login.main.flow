@@ -82,6 +82,15 @@ Repeat 6 times max
                               Log "@info This phone is already used by another account. Please enter a different one."
                               uiFeedback.errorMessage = "This phone is already used by another account. Please enter a different one."
                               uiFeedback.infoMessage = "Please enter a new number"
+                              max = Repeat 4 times max
+                                   otpCred = RRF "smsOtp.ftlh" uiFeedback
+                                   otpValidationResults = Call validationService validateOTPCode phone otpCred.code
+                                   When otpValidationResults is true
+                                        uiFeedback.infoMessage = "Invalid code provided."
+                                   Otherwise
+                                        uiFeedback.errorMessage = "Invalid code provided."
+                              it_ootpmax = { success: false, error: "ExceededTheNumberOfAttemptsAllowed" }
+                              Finish it_ootpmax
                     Log "@info Phone loop completed"
                     it_ValidMobileNum = { success: false, error: "ExceededTheNumberOfAttemptsAllowed" }
                     Finish it_ValidMobileNum
@@ -99,5 +108,5 @@ Repeat 6 times max
 // The login flow will end here with failure.
 Log "@info The maximum login attempt has been reached!"
 // Maximum attempts reached. Password validation failed!
-it_wzltf = {success:false, error: "Password validation failed!"}
-Finish it_wzltf
+it_grygn = {success:false, error: "Password validation failed!"}
+Finish it_grygn
