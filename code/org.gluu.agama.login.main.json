@@ -1166,7 +1166,7 @@
 				"width": 170,
 				"height": 122
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false
 		},
 		{
@@ -2002,49 +2002,6 @@
 			"measured": {
 				"width": 170,
 				"height": 122
-			},
-			"selected": false,
-			"dragging": false
-		},
-		{
-			"id": "whenNode-627f55aa-fb92-4526-b4d4-c340eadf528a",
-			"type": "whenNode",
-			"position": {
-				"x": 5232.831903399678,
-				"y": 911.3565471196192
-			},
-			"data": {
-				"id": "whenNode-627f55aa-fb92-4526-b4d4-c340eadf528a",
-				"type": "whenNode",
-				"position": {
-					"x": 5293.881948444194,
-					"y": 937.8499628936544
-				},
-				"previousNodeId": "callNode-f0c64f7c-c0da-4860-9e74-d20730b0ac7c",
-				"agamaData": {
-					"variableField": "",
-					"valueField": "",
-					"conditionInputField": "",
-					"conditions": [
-						{
-							"variable": "otpValidationResults",
-							"operator": "is",
-							"dataValue": "true",
-							"combinator": "none"
-						}
-					],
-					"nodeIcon": "ph:swap",
-					"nodeColor": "",
-					"titleColor": "",
-					"descColor": "",
-					"displayName": "",
-					"hasComment": true,
-					"comment": ""
-				}
-			},
-			"measured": {
-				"width": 110,
-				"height": 59
 			},
 			"selected": false,
 			"dragging": false
@@ -3052,8 +3009,8 @@
 		}
 	],
 	"viewport": {
-		"x": -3219.5879788575094,
-		"y": -634.507167969932,
-		"zoom": 0.8802590135631503
+		"x": -1599.4805336497857,
+		"y": -170.10378547732944,
+		"zoom": 0.5
 	}
 }
