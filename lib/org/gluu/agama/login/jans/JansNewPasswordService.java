@@ -207,8 +207,14 @@ public class JansNewPasswordService extends NewPasswordService {
         return new String(otp);
     }
 
-    public boolean sendOTPCode(String username, String phone) {
+    public boolean sendOTPCode(String username, String phone, boolean UniqueNumber) {
         try {
+            
+            // Skip OTP sending if number already exists
+            if (!UniqueNumber) {
+                logger.info("Phone number {} already exists. Skipping OTP send, returning control to Agama flow.", phone);
+                return phone; // Important: return non-null so Agama continues normally
+            }
             // Get user preferred language from profile
             User user = userService.getUser(username);
             String lang = null;
